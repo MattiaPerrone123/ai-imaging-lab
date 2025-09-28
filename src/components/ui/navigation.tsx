@@ -1,39 +1,69 @@
-import { Link, useLocation } from "react-router-dom";
+import { useState, useEffect } from "react";
 import { cn } from "@/lib/utils";
 
 const Navigation = () => {
-  const location = useLocation();
+  const [activeSection, setActiveSection] = useState("home");
 
   const navItems = [
-    { name: "Home", path: "/" },
-    { name: "About", path: "/about" },
-    { name: "Projects", path: "/projects" },
-    { name: "Publications", path: "/publications" },
-    { name: "Contact", path: "/contact" },
+    { name: "Home", href: "#home" },
+    { name: "About", href: "#about" },
+    { name: "Projects", href: "#projects" },
+    { name: "Publications", href: "#publications" },
+    { name: "Contact", href: "#contact" },
   ];
 
+  useEffect(() => {
+    const handleScroll = () => {
+      const sections = navItems.map(item => item.href.substring(1));
+      const currentSection = sections.find(section => {
+        const element = document.getElementById(section);
+        if (element) {
+          const rect = element.getBoundingClientRect();
+          return rect.top <= 100 && rect.bottom >= 100;
+        }
+        return false;
+      });
+      if (currentSection) {
+        setActiveSection(currentSection);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  const scrollToSection = (href: string) => {
+    const element = document.getElementById(href.substring(1));
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
-    <header className="w-full bg-background border-b border-border/40">
+    <header className="w-full bg-background/95 backdrop-blur-sm border-b border-border/40 fixed top-0 z-50">
       <div className="max-w-7xl mx-auto px-6 py-4">
         <div className="flex justify-between items-center">
-          <Link to="/" className="text-xl font-bold text-foreground hover:text-primary transition-colors">
+          <button 
+            onClick={() => scrollToSection("#home")}
+            className="text-xl font-bold text-foreground hover:text-primary transition-colors"
+          >
             Dr. Sarah Chen
-          </Link>
+          </button>
           
           <nav className="hidden md:flex space-x-8">
             {navItems.map((item) => (
-              <Link
-                key={item.path}
-                to={item.path}
+              <button
+                key={item.href}
+                onClick={() => scrollToSection(item.href)}
                 className={cn(
                   "text-sm font-medium transition-colors hover:text-primary",
-                  location.pathname === item.path
+                  activeSection === item.href.substring(1)
                     ? "text-primary"
                     : "text-muted-foreground"
                 )}
               >
                 {item.name}
-              </Link>
+              </button>
             ))}
           </nav>
         </div>

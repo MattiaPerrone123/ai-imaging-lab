@@ -4,7 +4,7 @@ import headshotImage from "@/assets/headshot.jpg";
 
 const HeroSection = () => {
   return (
-    <section className="max-w-7xl mx-auto px-6 py-16 md:py-24">
+    <section id="home" className="max-w-7xl mx-auto px-6 py-16 md:py-24 mt-20">
       <div className="grid md:grid-cols-2 gap-12 items-center">
         <div className="space-y-8">
           <div className="space-y-4">
