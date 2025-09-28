@@ -7,7 +7,7 @@ import { ExternalLink, Github } from "lucide-react";
 const Projects = () => {
   const projects = [
     {
-      title: "AI-Powered MRI Tumor Detection",
+      title: "AI-Powered MRI Tumor Detection - MRI2Rep",
       description: "Deep learning system for automated brain tumor detection and segmentation in MRI scans",
       image: "/api/placeholder/400/250",
       technologies: ["PyTorch", "U-Net", "DICOM", "Python"],
