@@ -1,7 +1,6 @@
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { ExternalLink, FileText } from "lucide-react";
+import { ExternalLink, Github } from "lucide-react";
 
 const PublicationsSection = () => {
   const publications = [
@@ -38,59 +37,50 @@ const PublicationsSection = () => {
   ];
 
   return (
-    <section id="publications" className="max-w-4xl mx-auto px-6 py-16">
-      <div className="space-y-8">
-        <div className="space-y-4">
-          <h2 className="text-4xl font-bold text-foreground">Publications</h2>
-          <div className="w-16 h-1 bg-primary rounded"></div>
-          <p className="text-lg text-muted-foreground">
-            Peer-reviewed research contributions to medical AI and computer vision
-          </p>
+    <section id="publications" className="max-w-4xl mx-auto px-8 py-20">
+      <div className="space-y-12">
+        <div className="text-center space-y-4">
+          <h2 className="text-3xl font-bold text-foreground">Publications</h2>
         </div>
         
-        <div className="space-y-6">
+        <div className="space-y-8">
           {publications.map((pub, index) => (
-            <Card key={index} className="hover:shadow-md transition-shadow">
-              <CardHeader>
-                <div className="flex justify-between items-start gap-4">
-                  <div className="flex-1">
-                    <CardTitle className="text-lg leading-tight mb-2">{pub.title}</CardTitle>
-                    <CardDescription className="space-y-1">
-                      <p className="font-medium text-foreground">{pub.journal}</p>
-                      <p>{pub.authors}</p>
-                      <p>{pub.year} • {pub.citations} citations</p>
-                    </CardDescription>
-                  </div>
-                  <div className="flex flex-col gap-2 items-end">
-                    <Badge variant="secondary">{pub.type}</Badge>
+            <div key={index} className="border-b border-border pb-8 last:border-b-0">
+              <div className="space-y-4">
+                <div>
+                  <h3 className="text-lg font-semibold text-foreground leading-tight mb-3">
+                    {pub.title}
+                  </h3>
+                  <div className="text-sm text-muted-foreground space-y-1">
+                    <p>{pub.authors}</p>
+                    <div className="flex items-center gap-4">
+                      <Badge className="bg-teal text-white">{pub.journal}</Badge>
+                      <span>{pub.year}</span>
+                    </div>
                   </div>
                 </div>
-              </CardHeader>
-              <CardContent className="space-y-4">
+                
                 <p className="text-sm text-muted-foreground leading-relaxed">
                   {pub.abstract}
                 </p>
                 
-                <div className="flex gap-2">
-                  <Button size="sm" variant="outline">
-                    <FileText className="w-4 h-4 mr-2" />
-                    PDF
+                <div className="text-xs text-muted-foreground">
+                  DOI: {pub.doi}
+                </div>
+                
+                <div className="flex gap-3">
+                  <Button size="sm" variant="outline" className="h-8 px-3 text-xs">
+                    <Github className="w-3 h-3 mr-1" />
+                    Code
                   </Button>
-                  <Button size="sm" variant="outline">
-                    <ExternalLink className="w-4 h-4 mr-2" />
-                    DOI: {pub.doi}
+                  <Button size="sm" variant="outline" className="h-8 px-3 text-xs">
+                    <ExternalLink className="w-3 h-3 mr-1" />
+                    Paper
                   </Button>
                 </div>
-              </CardContent>
-            </Card>
+              </div>
+            </div>
           ))}
-        </div>
-        
-        <div className="text-center pt-8">
-          <Button variant="outline" size="lg">
-            <ExternalLink className="w-4 h-4 mr-2" />
-            View Full Publication List on Google Scholar
-          </Button>
         </div>
       </div>
     </section>

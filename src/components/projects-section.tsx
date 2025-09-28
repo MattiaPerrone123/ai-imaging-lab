@@ -41,58 +41,78 @@ const ProjectsSection = () => {
   ];
 
   return (
-    <section id="projects" className="max-w-6xl mx-auto px-6 py-16">
-      <div className="space-y-8">
-        <div className="space-y-4">
-          <h2 className="text-4xl font-bold text-foreground">Projects</h2>
-          <div className="w-16 h-1 bg-primary rounded"></div>
-          <p className="text-lg text-muted-foreground">
-            Innovative AI solutions for medical imaging and healthcare applications
+    <section id="projects" className="max-w-6xl mx-auto px-8 py-20">
+      <div className="space-y-12">
+        <div className="text-center space-y-4">
+          <h2 className="text-3xl font-bold text-foreground">Research Projects</h2>
+          <p className="text-muted-foreground">
+            Developing AI solutions that translate cutting-edge research into clinical impact
           </p>
         </div>
         
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="space-y-12">
           {projects.map((project, index) => (
-            <Card key={index} className="overflow-hidden hover:shadow-lg transition-shadow">
-              <div className="aspect-video bg-muted relative">
+            <div key={index} className="grid md:grid-cols-2 gap-8 items-center">
+              <div className="aspect-video bg-gradient-to-br from-primary/10 to-teal/10 rounded-xl border border-border relative overflow-hidden">
                 <div className="absolute inset-0 flex items-center justify-center text-muted-foreground">
-                  Project Image
+                  <div className="text-center">
+                    <div className="w-16 h-16 bg-primary/20 rounded-full flex items-center justify-center mx-auto mb-2">
+                      <ExternalLink className="w-8 h-8 text-primary" />
+                    </div>
+                    <p className="text-sm">Project Visualization</p>
+                  </div>
                 </div>
               </div>
-              <CardHeader>
-                <CardTitle className="text-xl">{project.title}</CardTitle>
-                <CardDescription>{project.description}</CardDescription>
-              </CardHeader>
-              <CardContent className="space-y-4">
-                <div className="flex flex-wrap gap-2">
-                  {project.technologies.map((tech) => (
-                    <Badge key={tech} variant="secondary" className="text-xs">
-                      {tech}
-                    </Badge>
-                  ))}
+              
+              <div className="space-y-6">
+                <div>
+                  <h3 className="text-2xl font-bold text-foreground mb-3">
+                    {project.title.replace("AI-Powered ", "").replace("CT Scan ", "").replace("PET Scan ", "")}
+                  </h3>
+                  <p className="text-muted-foreground leading-relaxed">
+                    {project.description}
+                  </p>
                 </div>
                 
-                <ul className="space-y-1 text-sm text-muted-foreground">
-                  {project.features.map((feature, i) => (
-                    <li key={i} className="flex items-start">
-                      <span className="w-1.5 h-1.5 bg-primary rounded-full mt-2 mr-2 shrink-0"></span>
-                      {feature}
-                    </li>
-                  ))}
-                </ul>
+                <div>
+                  <h4 className="font-semibold text-foreground mb-3">Technologies</h4>
+                  <div className="flex flex-wrap gap-2">
+                    {project.technologies.map((tech) => (
+                      <Badge key={tech} variant="outline" className="text-xs">
+                        {tech}
+                      </Badge>
+                    ))}
+                  </div>
+                </div>
                 
-                <div className="flex gap-2 pt-2">
-                  <Button size="sm" variant="outline" className="flex-1">
+                <div>
+                  <h4 className="font-semibold text-foreground mb-3">Key Achievements</h4>
+                  <ul className="space-y-2">
+                    {project.features.map((feature, i) => (
+                      <li key={i} className="flex items-start text-sm text-muted-foreground">
+                        <span className="w-1.5 h-1.5 bg-primary rounded-full mt-2 mr-3 shrink-0"></span>
+                        {feature}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+                
+                <div className="flex gap-3 pt-2">
+                  <Button size="sm" variant="outline">
                     <Github className="w-4 h-4 mr-2" />
+                    Paper
+                  </Button>
+                  <Button size="sm" variant="outline">
+                    <ExternalLink className="w-4 h-4 mr-2" />
                     Code
                   </Button>
-                  <Button size="sm" className="flex-1">
+                  <Button size="sm" className="bg-primary hover:bg-primary/90">
                     <ExternalLink className="w-4 h-4 mr-2" />
                     Demo
                   </Button>
                 </div>
-              </CardContent>
-            </Card>
+              </div>
+            </div>
           ))}
         </div>
       </div>
