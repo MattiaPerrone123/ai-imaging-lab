@@ -37,7 +37,7 @@ const PublicationsSection = () => {
   ];
 
   return (
-    <section id="publications" className="max-w-4xl mx-auto px-8 py-20">
+    <section id="publications" className="max-w-6xl mx-auto px-8 py-20">
       <div className="space-y-12">
         <div className="text-center space-y-4">
           <h2 className="text-3xl font-bold text-foreground">Publications</h2>
@@ -45,10 +45,10 @@ const PublicationsSection = () => {
         
         <div className="space-y-8">
           {publications.map((pub, index) => (
-            <div key={index} className="p-8 rounded-2xl border-2 border-border/50 transition-all duration-300 hover:shadow-lg hover:scale-[1.02] hover:border-border">
+            <div key={index} className="p-6 md:p-8 rounded-2xl border-2 border-border/50 transition-all duration-300 hover:shadow-lg hover:scale-[1.02] hover:border-border">
               <div className="space-y-4 relative">
                 <div>
-                  <h3 className="text-lg font-semibold text-foreground leading-tight mb-3">
+                  <h3 className="text-base md:text-lg font-semibold text-foreground leading-tight mb-3">
                     {pub.title}
                   </h3>
                   <div className="text-sm text-muted-foreground space-y-1">
