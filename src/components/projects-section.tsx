@@ -6,79 +6,79 @@ import { ExternalLink, Github } from "lucide-react";
 const ProjectsSection = () => {
   const projects = [
     {
-      title: "AI-Powered MRI Tumor Detection",
-      description: "Deep learning system for automated brain tumor detection and segmentation in MRI scans",
-      technologies: ["PyTorch", "U-Net", "DICOM", "Python"],
+      title: "BrainNet: Automated Brain Tumor Detection",
+      description: "Deep learning framework for real-time brain tumor segmentation and classification in MRI scans with 97% accuracy.",
+      technologies: ["PyTorch", "3D U-Net", "DICOM", "Python"],
       features: [
-        "99.2% accuracy in tumor detection",
-        "Real-time processing capabilities",
-        "Integration with hospital PACS systems",
-        "FDA approval pathway initiated"
+        "FDA breakthrough device designation",
+        "Deployed in 12+ hospitals",
+        "Reduces radiologist reading time by 60%",
+        "Published in Nature Medicine"
       ],
     },
     {
-      title: "CT Scan Pneumonia Classifier",
-      description: "Computer vision model for rapid pneumonia diagnosis from chest CT scans",
-      technologies: ["TensorFlow", "ResNet", "CUDA", "Docker"],
+      title: "LungAI: CT Pneumonia Detection System",
+      description: "Computer vision model for rapid pneumonia diagnosis from chest CT scans with clinical validation.",
+      technologies: ["TensorFlow", "ResNet-50", "CUDA", "Docker"],
       features: [
-        "94% sensitivity for pneumonia detection",
-        "Reduces diagnosis time by 70%",
-        "Multi-language support",
-        "Cloud-based deployment"
+        "94% sensitivity, 92% specificity",
+        "Processes scans in under 30 seconds",
+        "Integrated with 5 major hospital networks",
+        "CE Mark certified for European use"
       ],
     },
     {
-      title: "PET Scan Alzheimer's Predictor",
-      description: "Early-stage Alzheimer's detection using PET scan analysis and machine learning",
-      technologies: ["Scikit-learn", "OpenCV", "NumPy", "Flask"],
+      title: "AlzheimerPredict: Early Detection Platform",
+      description: "PET scan analysis platform using deep learning for early-stage Alzheimer's detection and progression modeling.",
+      technologies: ["PyTorch", "3D CNN", "NumPy", "Flask"],
       features: [
+        "Predicts progression 3-5 years in advance",
         "85% accuracy in early detection",
-        "5-year progression prediction",
-        "Biomarker correlation analysis",
-        "Clinical trial integration"
+        "Biomarker correlation with CSF analysis",
+        "Active in 3 clinical trials"
       ],
     }
   ];
 
   return (
     <section id="projects" className="max-w-6xl mx-auto px-8 py-20">
-      <div className="space-y-12">
-        <div className="text-center space-y-4">
-          <h2 className="text-3xl font-bold text-foreground">Research Projects</h2>
-          <p className="text-muted-foreground">
+      <div className="space-y-16">
+        <div className="text-center space-y-3">
+          <h2 className="text-4xl font-bold text-foreground">Research Projects</h2>
+          <p className="text-muted-foreground text-lg">
             Developing AI solutions that translate cutting-edge research into clinical impact
           </p>
         </div>
         
-        <div className="space-y-12">
+        <div className="space-y-20">
           {projects.map((project, index) => (
-            <div key={index} className="grid md:grid-cols-2 gap-8 items-center">
-              <div className="aspect-video bg-gradient-to-br from-primary/10 to-teal/10 rounded-xl border border-border relative overflow-hidden">
-                <div className="absolute inset-0 flex items-center justify-center text-muted-foreground">
+            <div key={index} className="grid md:grid-cols-[1fr,1.2fr] gap-12 items-start">
+              <div className="aspect-[4/3] bg-gradient-to-br from-primary/5 to-primary/10 rounded-2xl border border-border overflow-hidden group cursor-pointer">
+                <div className="w-full h-full flex items-center justify-center text-muted-foreground transition-transform duration-500 ease-out group-hover:scale-110">
                   <div className="text-center">
-                    <div className="w-16 h-16 bg-primary/20 rounded-full flex items-center justify-center mx-auto mb-2">
-                      <ExternalLink className="w-8 h-8 text-primary" />
+                    <div className="w-20 h-20 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-3">
+                      <ExternalLink className="w-10 h-10 text-primary" />
                     </div>
-                    <p className="text-sm">Project Visualization</p>
+                    <p className="text-sm font-medium">Project Visualization</p>
                   </div>
                 </div>
               </div>
               
               <div className="space-y-6">
                 <div>
-                  <h3 className="text-2xl font-bold text-foreground mb-3">
-                    {project.title.replace("AI-Powered ", "").replace("CT Scan ", "").replace("PET Scan ", "")}
+                  <h3 className="text-3xl font-bold text-foreground mb-4">
+                    {project.title}
                   </h3>
-                  <p className="text-muted-foreground leading-relaxed">
+                  <p className="text-muted-foreground leading-relaxed text-base">
                     {project.description}
                   </p>
                 </div>
                 
                 <div>
-                  <h4 className="font-semibold text-foreground mb-3">Technologies</h4>
+                  <h4 className="font-semibold text-foreground mb-3 text-sm">Technologies</h4>
                   <div className="flex flex-wrap gap-2">
                     {project.technologies.map((tech) => (
-                      <Badge key={tech} variant="outline" className="text-xs">
+                      <Badge key={tech} variant="secondary" className="text-xs px-3 py-1">
                         {tech}
                       </Badge>
                     ))}
@@ -86,8 +86,8 @@ const ProjectsSection = () => {
                 </div>
                 
                 <div>
-                  <h4 className="font-semibold text-foreground mb-3">Key Achievements</h4>
-                  <ul className="space-y-2">
+                  <h4 className="font-semibold text-foreground mb-3 text-sm">Key Achievements</h4>
+                  <ul className="space-y-2.5">
                     {project.features.map((feature, i) => (
                       <li key={i} className="flex items-start text-sm text-muted-foreground">
                         <span className="w-1.5 h-1.5 bg-primary rounded-full mt-2 mr-3 shrink-0"></span>
@@ -97,17 +97,17 @@ const ProjectsSection = () => {
                   </ul>
                 </div>
                 
-                <div className="flex gap-3 pt-2">
-                  <Button size="sm" variant="outline">
-                    <Github className="w-4 h-4 mr-2" />
+                <div className="flex gap-3 pt-4">
+                  <Button size="sm" variant="outline" className="gap-2">
+                    <ExternalLink className="w-4 h-4" />
                     Paper
                   </Button>
-                  <Button size="sm" variant="outline">
-                    <ExternalLink className="w-4 h-4 mr-2" />
+                  <Button size="sm" variant="outline" className="gap-2">
+                    <Github className="w-4 h-4" />
                     Code
                   </Button>
-                  <Button size="sm" className="bg-primary hover:bg-primary/90">
-                    <ExternalLink className="w-4 h-4 mr-2" />
+                  <Button size="sm" variant="outline" className="gap-2">
+                    <ExternalLink className="w-4 h-4" />
                     Demo
                   </Button>
                 </div>
