@@ -20,7 +20,7 @@ const HeroSection = () => {
             </p>
           </div>
           
-          <div className="flex flex-wrap gap-3">
+          <div className="flex gap-3">
             <Button size="lg" className="bg-primary hover:bg-primary/90 px-6">
               <FileText className="w-4 h-4 mr-2" />
               View CV
