@@ -47,7 +47,7 @@ const Navigation = () => {
             onClick={() => scrollToSection("#home")}
             className="text-xl font-bold text-foreground hover:text-primary transition-colors"
           >
-            Dr. Sarah Chen
+            Mattia Perrone
           </button>
           
           <nav className="hidden md:flex space-x-8">

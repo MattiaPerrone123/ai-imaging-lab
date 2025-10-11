@@ -9,7 +9,7 @@ const HeroSection = () => {
         <div className="space-y-8">
           <div className="space-y-6">
             <h1 className="text-4xl md:text-5xl font-bold text-foreground leading-tight">
-              Dr. Sarah Chen
+              Mattia Perrone
             </h1>
             <h2 className="text-xl md:text-2xl text-primary font-normal">
               Advancing healthcare through AI-powered medical imaging
@@ -44,7 +44,7 @@ const HeroSection = () => {
           <div className="relative">
             <img
               src={headshotImage}
-              alt="Dr. Sarah Chen"
+              alt="Mattia Perrone"
               className="w-72 h-80 object-cover rounded-3xl shadow-sm border border-border"
             />
           </div>
