@@ -15,7 +15,7 @@ const HeroSection = () => {
               Advancing healthcare through AI-powered medical imaging
             </h2>
             <p className="text-base text-muted-foreground leading-relaxed">
-              Computer Vision Researcher & Biomedical Engineer specializing in MRI, CT, 
+              Computer Vision Researcher and Biomedical Engineer specializing in MRI, CT, 
               and PET scan analysis for early disease detection and precision medicine.
             </p>
           </div>
