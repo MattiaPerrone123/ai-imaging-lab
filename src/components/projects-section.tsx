@@ -53,7 +53,7 @@ const ProjectsSection = () => {
         <div className="space-y-20">
           {projects.map((project, index) => (
             <div key={index} className="grid md:grid-cols-2 gap-12 items-start p-16 rounded-2xl border-2 border-border/50 transition-all duration-300 hover:shadow-lg hover:scale-[1.02] hover:border-border">
-              <div className="aspect-[3/4] bg-gradient-to-br from-primary/5 to-primary/10 rounded-2xl border border-border overflow-hidden group cursor-pointer">
+              <div className="aspect-square bg-gradient-to-br from-primary/5 to-primary/10 rounded-2xl border border-border overflow-hidden group cursor-pointer">
                 <div className="w-full h-full flex items-center justify-center text-muted-foreground transition-transform duration-500 ease-out group-hover:scale-110">
                   <div className="text-center">
                     <div className="w-20 h-20 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-3">
@@ -78,7 +78,7 @@ const ProjectsSection = () => {
                   <h4 className="font-semibold text-foreground mb-3 text-sm">Technologies</h4>
                   <div className="flex flex-wrap gap-2">
                     {project.technologies.map((tech) => (
-                      <Badge key={tech} variant="tech" className="text-[10px] px-2 py-0.5">
+                      <Badge key={tech} variant="tech" className="text-xs px-2.5 py-0.5">
                         {tech}
                       </Badge>
                     ))}
