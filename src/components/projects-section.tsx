@@ -52,7 +52,7 @@ const ProjectsSection = () => {
         
         <div className="space-y-20">
           {projects.map((project, index) => (
-            <div key={index} className="grid md:grid-cols-[1fr,1.2fr] gap-12 items-start p-8 rounded-2xl border border-border/50 transition-all duration-300 hover:shadow-lg hover:scale-[1.02] hover:border-border">
+            <div key={index} className="grid md:grid-cols-[1fr,1.2fr] gap-12 items-start p-12 rounded-2xl border-2 border-border/50 transition-all duration-300 hover:shadow-lg hover:scale-[1.02] hover:border-border">
               <div className="aspect-[4/3] bg-gradient-to-br from-primary/5 to-primary/10 rounded-2xl border border-border overflow-hidden group cursor-pointer">
                 <div className="w-full h-full flex items-center justify-center text-muted-foreground transition-transform duration-500 ease-out group-hover:scale-110">
                   <div className="text-center">
