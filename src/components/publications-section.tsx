@@ -45,8 +45,8 @@ const PublicationsSection = () => {
         
         <div className="space-y-8">
           {publications.map((pub, index) => (
-            <div key={index} className="border-b border-border pb-8 last:border-b-0">
-              <div className="space-y-4">
+            <div key={index} className="p-8 rounded-2xl border-2 border-border/50 transition-all duration-300 hover:shadow-lg hover:scale-[1.02] hover:border-border">
+              <div className="space-y-4 relative">
                 <div>
                   <h3 className="text-lg font-semibold text-foreground leading-tight mb-3">
                     {pub.title}
@@ -54,7 +54,7 @@ const PublicationsSection = () => {
                   <div className="text-sm text-muted-foreground space-y-1">
                     <p>{pub.authors}</p>
                     <div className="flex items-center gap-4">
-                      <Badge className="bg-teal text-white">{pub.journal}</Badge>
+                      <Badge variant="tech" className="text-xs px-2.5 py-0.5">{pub.journal}</Badge>
                       <span>{pub.year}</span>
                     </div>
                   </div>
@@ -68,7 +68,7 @@ const PublicationsSection = () => {
                   DOI: {pub.doi}
                 </div>
                 
-                <div className="flex gap-3">
+                <div className="flex gap-3 justify-end">
                   <Button size="sm" variant="outline" className="h-8 px-3 text-xs">
                     <Github className="w-3 h-3 mr-1" />
                     Code
