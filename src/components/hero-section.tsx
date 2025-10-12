@@ -20,7 +20,7 @@ const HeroSection = () => {
             </p>
           </div>
           
-          <div className="grid grid-cols-1 gap-2 md:grid-cols-2 lg:grid-cols-4 lg:gap-3">
+          <div className="grid grid-cols-2 gap-2 lg:grid-cols-4 lg:gap-3">
             
             
           <a href={`${import.meta.env.BASE_URL}Mattia_Perrone_Resume.pdf`} target="_blank" rel="noopener noreferrer">
