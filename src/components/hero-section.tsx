@@ -12,33 +12,44 @@ const HeroSection = () => {
               Mattia Perrone
             </h1>
             <h2 className="text-xl md:text-2xl text-primary font-normal">
-              Advancing healthcare through AI-powered medical imaging
+              Research Scientist - Rush University Medical Center
             </h2>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              Computer Vision Researcher and Biomedical Engineer specializing in MRI, CT, 
-              and PET scan analysis for early disease detection and precision medicine.
+              AI and computer vision for medical imaging and clinical text.
+              Prior experience applying deep learning to time-series in biomechanics.
             </p>
           </div>
           
-          <div className="flex gap-2 flex-wrap md:grid md:grid-cols-2 lg:grid-cols-4 lg:gap-3">
-            <Button size="default" className="bg-primary hover:bg-primary/90 px-4 lg:px-8 flex-1 md:flex-none">
+            <div className="flex gap-2 flex-wrap md:grid md:grid-cols-2 lg:grid-cols-4 lg:gap-3">
+          <Button asChild size="default" className="bg-primary hover:bg-primary/90 px-4 lg:px-8 flex-1 md:flex-none">
+            <a href="/Mattia_Perrone_Resume.pdf" download>
               <FileText className="w-4 h-4 mr-2" />
               View CV
-            </Button>
-            <Button size="default" className="bg-teal hover:bg-teal/90 px-4 lg:px-8 flex-1 md:flex-none">
+            </a>
+          </Button>
+
+          <Button asChild size="default" className="bg-teal hover:bg-teal/90 px-4 lg:px-8 flex-1 md:flex-none">
+            <a href="https://www.linkedin.com/in/mattia-perrone/" target="_blank" rel="noopener noreferrer">
               <Linkedin className="w-4 h-4 mr-2" />
               LinkedIn
-            </Button>
-            <Button size="default" variant="outline" className="px-4 lg:px-8 border-primary/50 text-primary hover:bg-primary/10 flex-1 md:flex-none">
+            </a>
+          </Button>
+
+          <Button asChild size="default" variant="outline" className="px-4 lg:px-8 border-primary/50 text-primary hover:bg-primary/10 flex-1 md:flex-none">
+            <a href="https://scholar.google.com/citations?user=kqPVfW8AAAAJ&hl=en&oi=ao">
               <GraduationCap className="w-4 h-4 mr-2" />
               Papers
-            </Button>
-            <Button size="default" variant="outline" className="px-4 lg:px-8 border-black text-foreground hover:bg-black hover:text-white flex-1 md:flex-none">
+            </a>
+          </Button>
+
+          <Button asChild size="default" variant="outline" className="px-4 lg:px-8 border-black text-foreground hover:bg-black hover:text-white flex-1 md:flex-none">
+            <a href="https://github.com/MattiaPerrone123" target="_blank" rel="noopener noreferrer">
               <Github className="w-4 h-4 mr-2" />
               GitHub
-            </Button>
-          </div>
+            </a>
+          </Button>
         </div>
+
         
         <div className="flex justify-center md:justify-end">
           <div className="relative">
