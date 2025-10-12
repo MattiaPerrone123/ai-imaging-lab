@@ -49,7 +49,7 @@ const PublicationsSection = () => {
             const restAuthors = pub.authors.substring(firstAuthor.length);
             
             return (
-              <div key={index} className="p-6 md:p-8 rounded-2xl border-2 border-border/50 transition-all duration-300 hover:shadow-lg hover:scale-[1.01] hover:border-border">
+              <div key={index} className="p-6 md:p-8 rounded-2xl border-2 border-border/50 transition-all duration-300 hover:shadow-lg hover:border-border">
                 <div className="space-y-4 relative">
                   <div>
                     <h3 className="text-2xl font-bold text-foreground leading-tight mb-3">
