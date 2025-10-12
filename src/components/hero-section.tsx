@@ -45,7 +45,7 @@ const HeroSection = () => {
             <img
               src={headshotImage}
               alt="Mattia Perrone"
-              className="w-80 h-96 object-cover rounded-3xl shadow-sm border border-border"
+              className="w-[22rem] h-[26rem] object-cover rounded-3xl border border-border shadow-[0_10px_40px_-10px_rgba(59,130,246,0.3)] transition-transform duration-300 hover:scale-105 cursor-pointer"
             />
           </div>
         </div>
