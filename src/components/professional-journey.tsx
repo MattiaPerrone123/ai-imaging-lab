@@ -111,11 +111,11 @@ const ProfessionalJourney = () => {
                     <h3 className="text-xl font-semibold text-foreground mb-2">
                       {milestone.title}
                     </h3>
-                    <div className="flex items-center gap-2 mb-3">
+                    <div className="flex flex-col sm:flex-row sm:items-center gap-2 mb-3">
                       <p className="text-primary font-medium">
                         {milestone.organization}
                       </p>
-                      <span className="text-muted-foreground">•</span>
+                      <span className="text-muted-foreground hidden sm:inline">•</span>
                       <div className="flex items-center gap-1 text-sm text-muted-foreground">
                         <MapPin className="w-3.5 h-3.5" />
                         <span>{milestone.location}</span>
