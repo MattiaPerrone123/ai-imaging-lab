@@ -98,16 +98,16 @@ const ProjectsSection = () => {
                 </div>
                 
                 <div className="flex gap-2 pt-4 flex-wrap">
-                  <Button size="sm" variant="outline" className="gap-1.5 text-xs px-3 h-8">
-                    <ExternalLink className="w-3.5 h-3.5" />
+                  <Button size="sm" variant="outline" className="gap-2 text-sm px-4 h-9">
+                    <ExternalLink className="w-4 h-4" />
                     Paper
                   </Button>
-                  <Button size="sm" variant="outline" className="gap-1.5 text-xs px-3 h-8">
-                    <Github className="w-3.5 h-3.5" />
+                  <Button size="sm" variant="outline" className="gap-2 text-sm px-4 h-9">
+                    <Github className="w-4 h-4" />
                     Code
                   </Button>
-                  <Button size="sm" variant="outline" className="gap-1.5 text-xs px-3 h-8">
-                    <ExternalLink className="w-3.5 h-3.5" />
+                  <Button size="sm" variant="outline" className="gap-2 text-sm px-4 h-9">
+                    <ExternalLink className="w-4 h-4" />
                     Demo
                   </Button>
                 </div>
