@@ -53,7 +53,7 @@ const PublicationsSection = () => {
               <div key={index} className="p-6 md:p-8 rounded-2xl border-2 border-border/50 transition-all duration-300 hover:shadow-lg hover:scale-[1.005] hover:border-border">
                 <div className="space-y-4 relative">
                   <div>
-                    <h3 className="text-2xl font-bold text-foreground leading-tight mb-3 text-center md:text-left">
+                    <h3 className="text-2xl font-bold text-foreground leading-tight mb-3">
                       {pub.title}
                     </h3>
                     <div className="text-sm text-muted-foreground space-y-2">

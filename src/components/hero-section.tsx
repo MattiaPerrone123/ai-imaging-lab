@@ -8,13 +8,13 @@ const HeroSection = () => {
       <div className="grid md:grid-cols-2 gap-12 items-center">
         <div className="space-y-6">
           <div className="space-y-4">
-            <h1 className="text-5xl md:text-6xl font-bold text-foreground leading-tight text-center md:text-left">
+            <h1 className="text-5xl md:text-6xl font-bold text-foreground leading-tight">
               Mattia Perrone
             </h1>
-            <h2 className="text-xl md:text-2xl text-primary font-normal text-center md:text-left">
+            <h2 className="text-xl md:text-2xl text-primary font-normal">
               Advancing healthcare through AI-powered medical imaging
             </h2>
-            <p className="text-lg text-muted-foreground leading-relaxed text-center md:text-left">
+            <p className="text-lg text-muted-foreground leading-relaxed">
               Computer Vision Researcher and Biomedical Engineer specializing in MRI, CT, 
               and PET scan analysis for early disease detection and precision medicine.
             </p>
