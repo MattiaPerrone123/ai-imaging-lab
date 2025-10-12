@@ -20,36 +20,25 @@ const HeroSection = () => {
             </p>
           </div>
           
-            <div className="flex gap-2 flex-wrap md:grid md:grid-cols-2 lg:grid-cols-4 lg:gap-3">
-          <Button asChild size="default" className="bg-primary hover:bg-primary/90 px-4 lg:px-8 flex-1 md:flex-none">
-            <a href="/Mattia_Perrone_Resume.pdf" download>
+          <div className="flex gap-2 flex-wrap md:grid md:grid-cols-2 lg:grid-cols-4 lg:gap-3">
+            <Button size="default" className="bg-primary hover:bg-primary/90 px-4 lg:px-8 flex-1 md:flex-none">
               <FileText className="w-4 h-4 mr-2" />
               View CV
-            </a>
-          </Button>
-
-          <Button asChild size="default" className="bg-teal hover:bg-teal/90 px-4 lg:px-8 flex-1 md:flex-none">
-            <a href="https://www.linkedin.com/in/mattia-perrone/" target="_blank" rel="noopener noreferrer">
+            </Button>
+            <Button size="default" className="bg-teal hover:bg-teal/90 px-4 lg:px-8 flex-1 md:flex-none">
               <Linkedin className="w-4 h-4 mr-2" />
               LinkedIn
-            </a>
-          </Button>
-
-          <Button asChild size="default" variant="outline" className="px-4 lg:px-8 border-primary/50 text-primary hover:bg-primary/10 flex-1 md:flex-none">
-            <a href="https://scholar.google.com/citations?user=kqPVfW8AAAAJ&hl=en&oi=ao">
+            </Button>
+            <Button size="default" variant="outline" className="px-4 lg:px-8 border-primary/50 text-primary hover:bg-primary/10 flex-1 md:flex-none">
               <GraduationCap className="w-4 h-4 mr-2" />
               Papers
-            </a>
-          </Button>
-
-          <Button asChild size="default" variant="outline" className="px-4 lg:px-8 border-black text-foreground hover:bg-black hover:text-white flex-1 md:flex-none">
-            <a href="https://github.com/MattiaPerrone123" target="_blank" rel="noopener noreferrer">
+            </Button>
+            <Button size="default" variant="outline" className="px-4 lg:px-8 border-black text-foreground hover:bg-black hover:text-white flex-1 md:flex-none">
               <Github className="w-4 h-4 mr-2" />
               GitHub
-            </a>
-          </Button>
+            </Button>
+          </div>
         </div>
-
         
         <div className="flex justify-center md:justify-end">
           <div className="relative">
