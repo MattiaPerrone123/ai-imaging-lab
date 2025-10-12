@@ -20,20 +20,20 @@ const HeroSection = () => {
             </p>
           </div>
           
-          <div className="flex gap-2 flex-wrap md:grid md:grid-cols-2 lg:grid-cols-4">
-            <Button size="default" className="bg-primary hover:bg-primary/90 px-4 flex-1 md:flex-none">
+          <div className="flex gap-2 flex-wrap md:grid md:grid-cols-2 lg:grid-cols-4 lg:gap-3">
+            <Button size="default" className="bg-primary hover:bg-primary/90 px-4 lg:px-6 flex-1 md:flex-none">
               <FileText className="w-4 h-4 mr-2" />
               View CV
             </Button>
-            <Button size="default" className="bg-teal hover:bg-teal/90 px-4 flex-1 md:flex-none">
+            <Button size="default" className="bg-teal hover:bg-teal/90 px-4 lg:px-6 flex-1 md:flex-none">
               <Linkedin className="w-4 h-4 mr-2" />
               LinkedIn
             </Button>
-            <Button size="default" variant="outline" className="px-4 border-primary/50 text-primary hover:bg-primary/10 flex-1 md:flex-none">
+            <Button size="default" variant="outline" className="px-4 lg:px-6 border-primary/50 text-primary hover:bg-primary/10 flex-1 md:flex-none">
               <GraduationCap className="w-4 h-4 mr-2" />
               Publications
             </Button>
-            <Button size="default" variant="outline" className="px-4 border-black text-foreground hover:bg-black hover:text-white flex-1 md:flex-none">
+            <Button size="default" variant="outline" className="px-4 lg:px-6 border-black text-foreground hover:bg-black hover:text-white flex-1 md:flex-none">
               <Github className="w-4 h-4 mr-2" />
               GitHub
             </Button>
