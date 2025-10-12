@@ -52,8 +52,8 @@ const ProjectsSection = () => {
         
         <div className="space-y-20">
           {projects.map((project, index) => (
-            <div key={index} className="grid md:grid-cols-2 gap-8 md:gap-12 items-start p-6 md:p-12 rounded-2xl border-2 border-border/50 transition-all duration-300 hover:shadow-lg hover:scale-[1.005] hover:border-border">
-              <div className="aspect-[4/3] bg-gradient-to-br from-primary/5 to-primary/10 rounded-2xl border border-border overflow-hidden group cursor-pointer">
+            <div key={index} className="grid md:grid-cols-2 gap-6 md:gap-12 items-start p-4 md:p-12 rounded-2xl border-2 border-border/50 transition-all duration-300 hover:shadow-lg hover:scale-[1.005] hover:border-border">
+              <div className="aspect-[4/3] bg-gradient-to-br from-primary/5 to-primary/10 rounded-xl md:rounded-2xl border border-border overflow-hidden group cursor-pointer">
                 <div className="w-full h-full flex items-center justify-center text-muted-foreground transition-transform duration-500 ease-out group-hover:scale-110">
                   <div className="text-center">
                     <div className="w-20 h-20 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-3">
@@ -97,17 +97,17 @@ const ProjectsSection = () => {
                   </ul>
                 </div>
                 
-                <div className="flex gap-3 pt-4">
-                  <Button size="sm" variant="outline" className="gap-2">
-                    <ExternalLink className="w-4 h-4" />
+                <div className="flex gap-2 pt-4 flex-wrap">
+                  <Button size="sm" variant="outline" className="gap-1.5 text-xs px-3 h-8">
+                    <ExternalLink className="w-3.5 h-3.5" />
                     Paper
                   </Button>
-                  <Button size="sm" variant="outline" className="gap-2">
-                    <Github className="w-4 h-4" />
+                  <Button size="sm" variant="outline" className="gap-1.5 text-xs px-3 h-8">
+                    <Github className="w-3.5 h-3.5" />
                     Code
                   </Button>
-                  <Button size="sm" variant="outline" className="gap-2">
-                    <ExternalLink className="w-4 h-4" />
+                  <Button size="sm" variant="outline" className="gap-1.5 text-xs px-3 h-8">
+                    <ExternalLink className="w-3.5 h-3.5" />
                     Demo
                   </Button>
                 </div>
