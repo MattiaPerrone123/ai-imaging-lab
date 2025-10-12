@@ -37,7 +37,7 @@ const PublicationsSection = () => {
   ];
 
   return (
-    <section id="publications" className="max-w-7xl mx-auto px-8 py-20">
+    <section id="publications" className="max-w-7xl mx-auto px-8 py-20 bg-muted/20">
       <div className="space-y-12">
         <div className="text-center space-y-4">
           <h2 className="text-3xl font-bold text-foreground">Publications</h2>
@@ -49,7 +49,7 @@ const PublicationsSection = () => {
             const restAuthors = pub.authors.substring(firstAuthor.length);
             
             return (
-              <div key={index} className="p-6 md:p-8 rounded-2xl border-2 border-border/50 transition-all duration-300 hover:shadow-lg hover:border-border">
+              <div key={index} className="p-6 md:p-8 rounded-2xl border-2 border-border/50 transition-all duration-300 hover:shadow-lg hover:scale-[1.005] hover:border-border">
                 <div className="space-y-4 relative">
                   <div>
                     <h3 className="text-2xl font-bold text-foreground leading-tight mb-3">
