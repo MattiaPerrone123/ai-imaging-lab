@@ -8,29 +8,32 @@ const HeroSection = () => {
       <div className="grid md:grid-cols-2 gap-20 items-center">
         <div className="space-y-8">
           <div className="space-y-6">
-            <h1 className="text-4xl md:text-5xl font-bold text-foreground leading-tight">
+            <h1 className="text-5xl md:text-6xl font-bold text-foreground leading-tight">
               Mattia Perrone
             </h1>
-            <p className="text-base text-muted-foreground leading-relaxed">
+            <h2 className="text-xl md:text-2xl text-primary font-normal">
+              Advancing healthcare through AI-powered medical imaging
+            </h2>
+            <p className="text-lg text-muted-foreground leading-relaxed">
               Computer Vision Researcher and Biomedical Engineer specializing in MRI, CT, 
               and PET scan analysis for early disease detection and precision medicine.
             </p>
           </div>
           
-          <div className="flex gap-2.5 flex-wrap">
-            <Button size="default" className="bg-primary hover:bg-primary/90 px-5">
+          <div className="flex gap-2 flex-wrap md:flex-nowrap">
+            <Button size="default" className="bg-primary hover:bg-primary/90 px-4">
               <FileText className="w-4 h-4 mr-2" />
               View CV
             </Button>
-            <Button size="default" className="bg-teal hover:bg-teal/90 px-5">
+            <Button size="default" className="bg-teal hover:bg-teal/90 px-4">
               <Linkedin className="w-4 h-4 mr-2" />
               LinkedIn
             </Button>
-            <Button size="default" variant="outline" className="px-5 border-primary/50 text-primary hover:bg-primary/10">
+            <Button size="default" variant="outline" className="px-4 border-primary/50 text-primary hover:bg-primary/10">
               <GraduationCap className="w-4 h-4 mr-2" />
-              Google Scholar
+              Publications
             </Button>
-            <Button size="default" variant="secondary" className="px-5">
+            <Button size="default" variant="outline" className="px-4 border-black text-foreground hover:bg-black hover:text-white">
               <Github className="w-4 h-4 mr-2" />
               GitHub
             </Button>
