@@ -4,7 +4,8 @@ import { Mail, Linkedin, MapPin, Phone } from "lucide-react";
 
 const ContactSection = () => {
   return (
-    <section id="contact" className="max-w-4xl mx-auto px-6 py-16">
+    <section id="contact" className="w-full bg-muted/20 py-20">
+      <div className="max-w-4xl mx-auto px-6">
       <div className="space-y-8">
         <div className="space-y-4">
           <h2 className="text-4xl font-bold text-foreground">Contact</h2>
@@ -111,6 +112,7 @@ const ContactSection = () => {
             </div>
           </CardContent>
         </Card>
+      </div>
       </div>
     </section>
   );

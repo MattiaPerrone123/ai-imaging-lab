@@ -37,7 +37,8 @@ const PublicationsSection = () => {
   ];
 
   return (
-    <section id="publications" className="max-w-7xl mx-auto px-8 py-20 bg-muted/20">
+    <section id="publications" className="w-full py-20">
+      <div className="max-w-7xl mx-auto px-8">
       <div className="space-y-12">
         <div className="text-center space-y-4">
           <h2 className="text-3xl font-bold text-foreground">Publications</h2>
@@ -91,6 +92,7 @@ const PublicationsSection = () => {
             );
           })}
         </div>
+      </div>
       </div>
     </section>
   );

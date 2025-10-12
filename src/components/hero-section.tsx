@@ -11,29 +11,26 @@ const HeroSection = () => {
             <h1 className="text-4xl md:text-5xl font-bold text-foreground leading-tight">
               Mattia Perrone
             </h1>
-            <h2 className="text-xl md:text-2xl text-primary font-normal">
-              Advancing healthcare through AI-powered medical imaging
-            </h2>
             <p className="text-base text-muted-foreground leading-relaxed">
               Computer Vision Researcher and Biomedical Engineer specializing in MRI, CT, 
               and PET scan analysis for early disease detection and precision medicine.
             </p>
           </div>
           
-          <div className="flex gap-3">
-            <Button size="lg" className="bg-primary hover:bg-primary/90 px-6">
+          <div className="flex gap-2.5 flex-wrap">
+            <Button size="default" className="bg-primary hover:bg-primary/90 px-5">
               <FileText className="w-4 h-4 mr-2" />
               View CV
             </Button>
-            <Button size="lg" className="bg-teal hover:bg-teal/90 px-6">
+            <Button size="default" className="bg-teal hover:bg-teal/90 px-5">
               <Linkedin className="w-4 h-4 mr-2" />
               LinkedIn
             </Button>
-            <Button size="lg" variant="outline" className="px-6">
+            <Button size="default" variant="outline" className="px-5 border-primary/50 text-primary hover:bg-primary/10">
               <GraduationCap className="w-4 h-4 mr-2" />
               Google Scholar
             </Button>
-            <Button size="lg" variant="outline" className="px-6">
+            <Button size="default" variant="secondary" className="px-5">
               <Github className="w-4 h-4 mr-2" />
               GitHub
             </Button>

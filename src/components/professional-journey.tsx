@@ -29,7 +29,8 @@ const ProfessionalJourney = () => {
   ];
 
   return (
-    <section className="max-w-4xl mx-auto px-8 py-20">
+    <section className="w-full py-20">
+      <div className="max-w-4xl mx-auto px-8">
       <div className="space-y-12">
         <div className="text-center space-y-4">
           <h2 className="text-3xl font-bold text-foreground">Professional Journey</h2>
@@ -86,6 +87,7 @@ const ProfessionalJourney = () => {
             })}
           </div>
         </div>
+      </div>
       </div>
     </section>
   );

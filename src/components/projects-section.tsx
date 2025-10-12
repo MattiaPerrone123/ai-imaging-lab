@@ -41,7 +41,8 @@ const ProjectsSection = () => {
   ];
 
   return (
-    <section id="projects" className="max-w-7xl mx-auto px-8 py-20 bg-background/50">
+    <section id="projects" className="w-full bg-muted/20 py-20">
+      <div className="max-w-7xl mx-auto px-8">
       <div className="space-y-16">
         <div className="text-center space-y-3">
           <h2 className="text-4xl font-bold text-foreground">Research Projects</h2>
@@ -115,6 +116,7 @@ const ProjectsSection = () => {
             </div>
           ))}
         </div>
+      </div>
       </div>
     </section>
   );
