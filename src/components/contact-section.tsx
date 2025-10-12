@@ -7,9 +7,8 @@ const ContactSection = () => {
     <section id="contact" className="w-full bg-muted/20 py-20">
       <div className="max-w-4xl mx-auto px-6">
       <div className="space-y-8">
-        <div className="space-y-4">
-          <h2 className="text-4xl font-bold text-foreground">Contact</h2>
-          <div className="w-16 h-1 bg-primary rounded"></div>
+        <div className="text-center space-y-4">
+          <h2 className="text-3xl font-bold text-foreground">Contact</h2>
         </div>
         
         <div className="grid md:grid-cols-2 gap-8">
