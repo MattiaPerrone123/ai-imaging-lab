@@ -1,5 +1,6 @@
 import { Badge } from "@/components/ui/badge";
-import { Building, GraduationCap, MapPin } from "lucide-react";
+import { Card } from "@/components/ui/card";
+import { Building, GraduationCap, MapPin, Calendar, Briefcase, Award } from "lucide-react";
 
 const ProfessionalJourney = () => {
   const milestones = [
@@ -19,12 +20,39 @@ const ProfessionalJourney = () => {
       title: "Postdoctoral Fellowship",
       organization: "Politecnico di Milano",
       location: "Milan, Italy",
-      description: "Pioneered novel approaches to multi-modal medical image fusion for cancer diagnosis. Key achievements:",
-      achievements: [
-        "Published in Nature Machine Intelligence on multi-modal fusion techniques"
-      ],
+      description: "Pioneered novel approaches to multi-modal medical image fusion for cancer diagnosis",
       icon: GraduationCap,
-      color: "bg-teal"
+      color: "bg-accent"
+    },
+    {
+      year: "2018",
+      type: "Career",
+      title: "Senior Research Engineer",
+      organization: "Google Health AI",
+      location: "Mountain View, CA",
+      description: "Developed deep learning models for early disease detection in medical imaging",
+      icon: Briefcase,
+      color: "bg-primary"
+    },
+    {
+      year: "2016",
+      type: "Education",
+      title: "Ph.D. in Biomedical Engineering",
+      organization: "MIT",
+      location: "Cambridge, MA",
+      description: "Thesis on advanced computer vision techniques for automated diagnosis systems",
+      icon: GraduationCap,
+      color: "bg-accent"
+    },
+    {
+      year: "2014",
+      type: "Career",
+      title: "Research Scientist",
+      organization: "Johns Hopkins Medical Center",
+      location: "Baltimore, MD",
+      description: "Pioneered AI-driven approaches to medical image analysis and interpretation",
+      icon: Award,
+      color: "bg-primary"
     }
   ];
 
@@ -34,25 +62,35 @@ const ProfessionalJourney = () => {
       <div className="space-y-12">
         <div className="text-center space-y-4">
           <h2 className="text-3xl font-bold text-foreground">Professional Journey</h2>
-          <p className="text-muted-foreground">Key milestones in my academic and professional career</p>
         </div>
         
         <div className="relative">
-          <div className="absolute left-8 top-0 bottom-0 w-0.5 bg-border"></div>
+          <div className="absolute left-8 top-0 bottom-0 w-0.5 bg-primary/30"></div>
           
           <div className="space-y-12">
             {milestones.map((milestone, index) => {
               const IconComponent = milestone.icon;
               return (
                 <div key={index} className="relative flex items-start gap-8">
-                  <div className={`${milestone.color} w-16 h-16 rounded-full flex items-center justify-center shadow-lg z-10`}>
-                    <IconComponent className="w-8 h-8 text-white" />
+                  <div className="relative">
+                    <div className={`${milestone.color} w-16 h-16 rounded-full flex items-center justify-center shadow-lg z-10 relative`}>
+                      <IconComponent className="w-8 h-8 text-white" />
+                      <div className="absolute -top-1 -right-1 w-5 h-5 bg-background border-2 border-border rounded-full"></div>
+                    </div>
                   </div>
                   
-                  <div className="flex-1 min-w-0">
-                    <div className="flex items-center gap-3 mb-2">
-                      <Badge variant="secondary">{milestone.type}</Badge>
-                      <span className="text-sm text-muted-foreground">{milestone.year}</span>
+                  <Card className="flex-1 p-6 transition-all duration-300 hover:scale-[1.02] hover:shadow-[0_12px_40px_-10px_rgba(59,130,246,0.3)] cursor-pointer">
+                    <div className="flex items-center gap-3 mb-3">
+                      <Badge 
+                        variant="secondary" 
+                        className={`${milestone.type === 'Career' ? 'bg-primary/20 text-primary hover:bg-primary/30' : 'bg-accent/20 text-accent-foreground hover:bg-accent/30'} transition-colors duration-200`}
+                      >
+                        {milestone.type}
+                      </Badge>
+                      <div className="flex items-center gap-1.5 text-sm text-muted-foreground">
+                        <Calendar className="w-3.5 h-3.5" />
+                        <span>{milestone.year}</span>
+                      </div>
                     </div>
                     
                     <h3 className="text-xl font-semibold text-foreground mb-1">
@@ -67,21 +105,10 @@ const ProfessionalJourney = () => {
                       {milestone.location}
                     </div>
                     
-                    <p className="text-sm text-muted-foreground leading-relaxed mb-3">
+                    <p className="text-sm text-muted-foreground leading-relaxed">
                       {milestone.description}
                     </p>
-                    
-                    {milestone.achievements && (
-                      <ul className="space-y-1">
-                        {milestone.achievements.map((achievement, i) => (
-                          <li key={i} className="flex items-start text-sm text-muted-foreground">
-                            <span className="w-1.5 h-1.5 bg-primary rounded-full mt-2 mr-2 shrink-0"></span>
-                            {achievement}
-                          </li>
-                        ))}
-                      </ul>
-                    )}
-                  </div>
+                  </Card>
                 </div>
               );
             })}
