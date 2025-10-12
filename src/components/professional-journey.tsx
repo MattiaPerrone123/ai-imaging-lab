@@ -32,7 +32,7 @@ const ProfessionalJourney = () => {
       location: "Milan, Italy",
       description: "Pioneered novel approaches to multi-modal medical image fusion for cancer diagnosis",
       icon: GraduationCap,
-      color: "bg-accent"
+      color: "bg-primary"
     },
     {
       year: "2016",
