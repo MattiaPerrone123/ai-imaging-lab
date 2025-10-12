@@ -41,7 +41,7 @@ const Navigation = () => {
   };
 
   return (
-    <header className="w-full border-b border-border/40 fixed top-0 z-50" style={{ backgroundColor: 'hsl(var(--background))', background: 'linear-gradient(hsl(var(--primary) / 0.08), hsl(var(--primary) / 0.08)), hsl(var(--background))' }}>
+    <header className="w-full border-b border-border/40 fixed top-0 z-50 backdrop-blur-[2px]" style={{ backgroundColor: 'hsl(var(--background))', background: 'linear-gradient(hsl(var(--primary) / 0.08), hsl(var(--primary) / 0.08)), hsl(var(--background))' }}>
       <div className="max-w-7xl mx-auto px-6 py-4">
         <div className="flex justify-between items-center">
           <button 
