@@ -1,6 +1,6 @@
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { ExternalLink, Github, Calendar } from "lucide-react";
+import { ExternalLink, Github, Calendar, GraduationCap } from "lucide-react";
 
 const PublicationsSection = () => {
   const publications = [
@@ -94,6 +94,16 @@ const PublicationsSection = () => {
               </div>
             );
           })}
+        </div>
+        
+        <div className="flex justify-center mt-12">
+          <Button 
+            size="lg" 
+            className="bg-blue-500 text-white hover:bg-blue-600 hover:scale-105 hover:shadow-[0_8px_20px_-4px_rgba(59,130,246,0.5)] transition-all duration-300 gap-2"
+          >
+            <GraduationCap className="w-5 h-5" />
+            View all publications on Google Scholar
+          </Button>
         </div>
       </div>
       </div>

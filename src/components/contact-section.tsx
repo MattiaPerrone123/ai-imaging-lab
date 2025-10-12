@@ -1,6 +1,6 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Mail, Linkedin, MapPin, Phone } from "lucide-react";
+import { Mail, Linkedin } from "lucide-react";
 
 const ContactSection = () => {
   return (
@@ -10,9 +10,6 @@ const ContactSection = () => {
         <div className="space-y-4">
           <h2 className="text-4xl font-bold text-foreground">Contact</h2>
           <div className="w-16 h-1 bg-primary rounded"></div>
-          <p className="text-lg text-muted-foreground">
-            Let's collaborate on advancing AI in healthcare
-          </p>
         </div>
         
         <div className="grid md:grid-cols-2 gap-8">
@@ -51,67 +48,7 @@ const ContactSection = () => {
               </Button>
             </CardContent>
           </Card>
-          
-          <Card>
-            <CardHeader>
-              <CardTitle className="flex items-center gap-2">
-                <MapPin className="w-5 h-5 text-primary" />
-                Location
-              </CardTitle>
-            </CardHeader>
-            <CardContent>
-              <p className="text-muted-foreground">
-                Stanford University<br />
-                Department of Biomedical Engineering<br />
-                Stanford, CA 94305
-              </p>
-            </CardContent>
-          </Card>
-          
-          <Card>
-            <CardHeader>
-              <CardTitle className="flex items-center gap-2">
-                <Phone className="w-5 h-5 text-primary" />
-                Office Hours
-              </CardTitle>
-            </CardHeader>
-            <CardContent>
-              <p className="text-muted-foreground">
-                Tuesdays & Thursdays<br />
-                2:00 PM - 4:00 PM PST<br />
-                By appointment only
-              </p>
-            </CardContent>
-          </Card>
         </div>
-        
-        <Card>
-          <CardHeader>
-            <CardTitle>Research Interests</CardTitle>
-          </CardHeader>
-          <CardContent>
-            <div className="grid md:grid-cols-2 gap-6">
-              <div>
-                <h3 className="font-semibold text-foreground mb-2">Current Focus Areas</h3>
-                <ul className="space-y-1 text-muted-foreground">
-                  <li>• AI-powered medical imaging analysis</li>
-                  <li>• Early disease detection algorithms</li>
-                  <li>• Federated learning in healthcare</li>
-                  <li>• Clinical AI implementation</li>
-                </ul>
-              </div>
-              <div>
-                <h3 className="font-semibold text-foreground mb-2">Collaboration Opportunities</h3>
-                <ul className="space-y-1 text-muted-foreground">
-                  <li>• Joint research projects</li>
-                  <li>• Industry partnerships</li>
-                  <li>• Graduate student mentoring</li>
-                  <li>• Conference speaking</li>
-                </ul>
-              </div>
-            </div>
-          </CardContent>
-        </Card>
       </div>
       </div>
     </section>
