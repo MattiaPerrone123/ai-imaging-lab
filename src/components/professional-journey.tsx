@@ -10,7 +10,12 @@ const ProfessionalJourney = () => {
       title: "Principal Research Scientist",
       organization: "Stanford Medical AI Lab",
       location: "Stanford, CA",
-      description: "Leading interdisciplinary teams developing FDA-approved algorithms for automated radiology screening",
+      description: "Leading interdisciplinary teams developing FDA-approved algorithms for automated radiology screening. Key achievements:",
+      achievements: [
+        "Developed 3 FDA-approved AI algorithms for chest X-ray screening",
+        "Published 15+ papers in top-tier medical imaging journals",
+        "Led team of 12 researchers across multiple institutions"
+      ],
       icon: Building,
       color: "bg-primary"
     },
@@ -20,7 +25,12 @@ const ProfessionalJourney = () => {
       title: "Senior Research Engineer",
       organization: "Google Health AI",
       location: "Mountain View, CA",
-      description: "Developed deep learning models for early disease detection in medical imaging",
+      description: "Developed deep learning models for early disease detection in medical imaging. Key achievements:",
+      achievements: [
+        "Created novel architectures for multi-task learning in medical imaging",
+        "Achieved 95%+ accuracy in early lung cancer detection",
+        "Collaborated with 50+ hospitals worldwide for data collection"
+      ],
       icon: Briefcase,
       color: "bg-primary"
     },
@@ -30,9 +40,14 @@ const ProfessionalJourney = () => {
       title: "Postdoctoral Fellowship",
       organization: "Politecnico di Milano",
       location: "Milan, Italy",
-      description: "Pioneered novel approaches to multi-modal medical image fusion for cancer diagnosis",
+      description: "Pioneered novel approaches to multi-modal medical image fusion for cancer diagnosis. Key achievements:",
+      achievements: [
+        "Published in Nature Machine Intelligence on multi-modal fusion techniques",
+        "Presented at MICCAI 2020 - received best poster award",
+        "3 first-author publications in top-tier journals"
+      ],
       icon: GraduationCap,
-      color: "bg-primary"
+      color: "bg-cyan-500"
     },
     {
       year: "2016",
@@ -42,7 +57,7 @@ const ProfessionalJourney = () => {
       location: "Cambridge, MA",
       description: "Thesis on advanced computer vision techniques for automated diagnosis systems",
       icon: GraduationCap,
-      color: "bg-accent"
+      color: "bg-cyan-500"
     },
     {
       year: "2014",
@@ -52,7 +67,7 @@ const ProfessionalJourney = () => {
       location: "Baltimore, MD",
       description: "Pioneered AI-driven approaches to medical image analysis and interpretation",
       icon: Award,
-      color: "bg-accent"
+      color: "bg-cyan-500"
     }
   ];
 
@@ -83,7 +98,7 @@ const ProfessionalJourney = () => {
                     <div className="flex items-center gap-3 mb-3">
                       <Badge 
                         variant="secondary" 
-                        className={`${milestone.type === 'Career' ? 'bg-blue-500/90 text-white hover:bg-blue-600' : 'bg-accent/20 text-accent-foreground hover:bg-accent/30'} transition-colors duration-200`}
+                        className={`${milestone.type === 'Career' ? 'bg-blue-500/90 text-white hover:bg-blue-600' : 'bg-cyan-400/90 text-white hover:bg-cyan-500'} transition-colors duration-200`}
                       >
                         {milestone.type}
                       </Badge>
@@ -93,21 +108,31 @@ const ProfessionalJourney = () => {
                       </div>
                     </div>
                     
-                    <h3 className="text-xl font-semibold text-foreground mb-1">
+                    <h3 className="text-xl font-semibold text-foreground mb-2">
                       {milestone.title}
                     </h3>
-                    <p className="text-primary font-medium mb-2">
-                      {milestone.organization}
-                    </p>
-                    
-                    <div className="flex items-center gap-1 text-sm text-muted-foreground mb-3">
-                      <MapPin className="w-4 h-4" />
-                      {milestone.location}
+                    <div className="flex items-center gap-2 mb-3">
+                      <p className="text-primary font-medium">
+                        {milestone.organization}
+                      </p>
+                      <span className="text-muted-foreground">•</span>
+                      <span className="text-sm text-muted-foreground">{milestone.location}</span>
                     </div>
                     
-                    <p className="text-sm text-muted-foreground leading-relaxed">
+                    <p className="text-sm text-muted-foreground leading-relaxed mb-2">
                       {milestone.description}
                     </p>
+                    
+                    {milestone.achievements && (
+                      <ul className="space-y-1 mt-3">
+                        {milestone.achievements.map((achievement, idx) => (
+                          <li key={idx} className="text-sm text-muted-foreground leading-relaxed flex gap-2">
+                            <span className="text-primary mt-1">•</span>
+                            <span>{achievement}</span>
+                          </li>
+                        ))}
+                      </ul>
+                    )}
                   </Card>
                 </div>
               );
