@@ -16,23 +16,23 @@ const ProfessionalJourney = () => {
     },
     {
       year: "2020",
-      type: "Education", 
-      title: "Postdoctoral Fellowship",
-      organization: "Politecnico di Milano",
-      location: "Milan, Italy",
-      description: "Pioneered novel approaches to multi-modal medical image fusion for cancer diagnosis",
-      icon: GraduationCap,
-      color: "bg-accent"
-    },
-    {
-      year: "2018",
-      type: "Career",
+      type: "Career", 
       title: "Senior Research Engineer",
       organization: "Google Health AI",
       location: "Mountain View, CA",
       description: "Developed deep learning models for early disease detection in medical imaging",
       icon: Briefcase,
       color: "bg-primary"
+    },
+    {
+      year: "2018",
+      type: "Education",
+      title: "Postdoctoral Fellowship",
+      organization: "Politecnico di Milano",
+      location: "Milan, Italy",
+      description: "Pioneered novel approaches to multi-modal medical image fusion for cancer diagnosis",
+      icon: GraduationCap,
+      color: "bg-accent"
     },
     {
       year: "2016",
@@ -46,13 +46,13 @@ const ProfessionalJourney = () => {
     },
     {
       year: "2014",
-      type: "Career",
+      type: "Education",
       title: "Research Scientist",
       organization: "Johns Hopkins Medical Center",
       location: "Baltimore, MD",
       description: "Pioneered AI-driven approaches to medical image analysis and interpretation",
       icon: Award,
-      color: "bg-primary"
+      color: "bg-accent"
     }
   ];
 
@@ -71,19 +71,19 @@ const ProfessionalJourney = () => {
             {milestones.map((milestone, index) => {
               const IconComponent = milestone.icon;
               return (
-                <div key={index} className="relative flex items-start gap-8">
+                <div key={index} className="relative flex items-start gap-8 group">
                   <div className="relative">
-                    <div className={`${milestone.color} w-16 h-16 rounded-full flex items-center justify-center shadow-lg z-10 relative`}>
+                    <div className={`${milestone.color} w-16 h-16 rounded-full flex items-center justify-center shadow-lg z-10 relative transition-all duration-300 group-hover:scale-110 group-hover:shadow-xl`}>
                       <IconComponent className="w-8 h-8 text-white" />
                       <div className="absolute -top-1 -right-1 w-5 h-5 bg-background border-2 border-border rounded-full"></div>
                     </div>
                   </div>
                   
-                  <Card className="flex-1 p-6 transition-all duration-300 hover:scale-[1.02] hover:shadow-[0_12px_40px_-10px_rgba(59,130,246,0.3)] cursor-pointer">
+                  <Card className="flex-1 p-6 transition-all duration-300 group-hover:scale-[1.02] group-hover:shadow-[0_12px_40px_-10px_rgba(59,130,246,0.3)] cursor-pointer">
                     <div className="flex items-center gap-3 mb-3">
                       <Badge 
                         variant="secondary" 
-                        className={`${milestone.type === 'Career' ? 'bg-primary/20 text-primary hover:bg-primary/30' : 'bg-accent/20 text-accent-foreground hover:bg-accent/30'} transition-colors duration-200`}
+                        className={`${milestone.type === 'Career' ? 'bg-blue-500/90 text-white hover:bg-blue-600' : 'bg-accent/20 text-accent-foreground hover:bg-accent/30'} transition-colors duration-200`}
                       >
                         {milestone.type}
                       </Badge>

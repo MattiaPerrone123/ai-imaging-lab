@@ -1,6 +1,6 @@
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { ExternalLink, Github } from "lucide-react";
+import { ExternalLink, Github, Calendar } from "lucide-react";
 
 const PublicationsSection = () => {
   const publications = [
@@ -62,7 +62,10 @@ const PublicationsSection = () => {
                       </p>
                       <div className="flex items-center gap-3 flex-wrap">
                         <Badge variant="tech" className="text-xs px-2.5 py-0.5">{pub.journal}</Badge>
-                        <span>• {pub.year}</span>
+                        <div className="flex items-center gap-1.5">
+                          <Calendar className="w-3.5 h-3.5" />
+                          <span>{pub.year}</span>
+                        </div>
                       </div>
                     </div>
                   </div>
