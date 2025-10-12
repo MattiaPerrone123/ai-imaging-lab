@@ -31,7 +31,7 @@ const HeroSection = () => {
             </Button>
             <Button size="default" variant="outline" className="px-4 lg:px-8 border-primary/50 text-primary hover:bg-primary/10 flex-1 md:flex-none">
               <GraduationCap className="w-4 h-4 mr-2" />
-              Publications
+              Papers
             </Button>
             <Button size="default" variant="outline" className="px-4 lg:px-8 border-black text-foreground hover:bg-black hover:text-white flex-1 md:flex-none">
               <Github className="w-4 h-4 mr-2" />

@@ -41,7 +41,7 @@ const Navigation = () => {
   };
 
   return (
-    <header className="w-full bg-background/95 backdrop-blur-sm border-b border-border/40 fixed top-0 z-50">
+    <header className="w-full bg-primary/5 backdrop-blur-sm border-b border-border/40 fixed top-0 z-50">
       <div className="max-w-7xl mx-auto px-6 py-4">
         <div className="flex justify-between items-center">
           <button 
