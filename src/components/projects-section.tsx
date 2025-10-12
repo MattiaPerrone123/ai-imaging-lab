@@ -41,7 +41,7 @@ const ProjectsSection = () => {
   ];
 
   return (
-    <section id="projects" className="max-w-6xl mx-auto px-8 py-20">
+    <section id="projects" className="max-w-7xl mx-auto px-8 py-20">
       <div className="space-y-16">
         <div className="text-center space-y-3">
           <h2 className="text-4xl font-bold text-foreground">Research Projects</h2>
@@ -52,7 +52,7 @@ const ProjectsSection = () => {
         
         <div className="space-y-20">
           {projects.map((project, index) => (
-            <div key={index} className="grid md:grid-cols-2 gap-12 items-start p-16 rounded-2xl border-2 border-border/50 transition-all duration-300 hover:shadow-lg hover:scale-[1.02] hover:border-border">
+            <div key={index} className="grid md:grid-cols-2 gap-12 items-start p-16 rounded-2xl border-2 border-border/50 transition-all duration-300 hover:shadow-lg hover:scale-[1.01] hover:border-border">
               <div className="aspect-square bg-gradient-to-br from-primary/5 to-primary/10 rounded-2xl border border-border overflow-hidden group cursor-pointer">
                 <div className="w-full h-full flex items-center justify-center text-muted-foreground transition-transform duration-500 ease-out group-hover:scale-110">
                   <div className="text-center">

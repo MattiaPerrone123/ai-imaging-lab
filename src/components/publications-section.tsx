@@ -9,7 +9,7 @@ const PublicationsSection = () => {
       journal: "Nature Machine Intelligence",
       year: "2024",
       authors: "Chen, S., Rodriguez, M., Kim, J., et al.",
-      doi: "10.1038/s42256-024-00123-4",
+      keywords: ["Deep Learning", "Medical Imaging", "Brain Tumor", "MRI Segmentation"],
       type: "Journal Article",
       citations: 127,
       abstract: "We present a novel deep learning framework for automated brain tumor segmentation that achieves state-of-the-art performance across multiple MRI modalities..."
@@ -19,7 +19,7 @@ const PublicationsSection = () => {
       journal: "The Lancet Digital Health",
       year: "2023",
       authors: "Chen, S., Thompson, A., Lee, K., et al.",
-      doi: "10.1016/S2589-7500(23)00034-2",
+      keywords: ["Artificial Intelligence", "Alzheimer's Disease", "PET Imaging", "Early Detection"],
       type: "Journal Article",
       citations: 203,
       abstract: "This large-scale multi-center study demonstrates the potential of artificial intelligence in early Alzheimer's detection using PET scan analysis..."
@@ -29,7 +29,7 @@ const PublicationsSection = () => {
       journal: "IEEE Transactions on Medical Imaging",
       year: "2023",
       authors: "Wang, L., Chen, S., Patel, R., et al.",
-      doi: "10.1109/TMI.2023.3245678",
+      keywords: ["Federated Learning", "Privacy", "Medical AI", "Healthcare"],
       type: "Journal Article",
       citations: 156,
       abstract: "We propose a federated learning approach that enables collaborative AI model training while preserving patient privacy across multiple medical institutions..."
@@ -37,50 +37,57 @@ const PublicationsSection = () => {
   ];
 
   return (
-    <section id="publications" className="max-w-6xl mx-auto px-8 py-20">
+    <section id="publications" className="max-w-7xl mx-auto px-8 py-20">
       <div className="space-y-12">
         <div className="text-center space-y-4">
           <h2 className="text-3xl font-bold text-foreground">Publications</h2>
         </div>
         
         <div className="space-y-8">
-          {publications.map((pub, index) => (
-            <div key={index} className="p-6 md:p-8 rounded-2xl border-2 border-border/50 transition-all duration-300 hover:shadow-lg hover:scale-[1.02] hover:border-border">
-              <div className="space-y-4 relative">
-                <div>
-                  <h3 className="text-base md:text-lg font-semibold text-foreground leading-tight mb-3">
-                    {pub.title}
-                  </h3>
-                  <div className="text-sm text-muted-foreground space-y-1">
-                    <p>{pub.authors}</p>
-                    <div className="flex items-center gap-4">
-                      <Badge variant="tech" className="text-xs px-2.5 py-0.5">{pub.journal}</Badge>
-                      <span>{pub.year}</span>
+          {publications.map((pub, index) => {
+            const firstAuthor = pub.authors.split(',')[0];
+            const restAuthors = pub.authors.substring(firstAuthor.length);
+            
+            return (
+              <div key={index} className="p-6 md:p-8 rounded-2xl border-2 border-border/50 transition-all duration-300 hover:shadow-lg hover:scale-[1.01] hover:border-border">
+                <div className="space-y-4 relative">
+                  <div>
+                    <h3 className="text-3xl font-bold text-foreground leading-tight mb-3">
+                      {pub.title}
+                    </h3>
+                    <div className="text-sm text-muted-foreground space-y-2">
+                      <p>
+                        <span className="underline">{firstAuthor}</span>{restAuthors}
+                      </p>
+                      <div className="flex items-center gap-3 flex-wrap">
+                        <Badge variant="tech" className="text-xs px-2.5 py-0.5">{pub.journal}</Badge>
+                        <span>• {pub.year}</span>
+                      </div>
                     </div>
                   </div>
-                </div>
-                
-                <p className="text-sm text-muted-foreground leading-relaxed">
-                  {pub.abstract}
-                </p>
-                
-                <div className="text-xs text-muted-foreground">
-                  DOI: {pub.doi}
-                </div>
-                
-                <div className="flex gap-3 justify-end">
-                  <Button size="sm" variant="outline" className="h-8 px-3 text-xs">
-                    <Github className="w-3 h-3 mr-1" />
-                    Code
-                  </Button>
-                  <Button size="sm" variant="outline" className="h-8 px-3 text-xs">
-                    <ExternalLink className="w-3 h-3 mr-1" />
-                    Paper
-                  </Button>
+                  
+                  <p className="text-base text-muted-foreground leading-relaxed">
+                    {pub.abstract}
+                  </p>
+                  
+                  <div className="text-sm text-muted-foreground">
+                    <span className="font-semibold">Keywords:</span> {pub.keywords.join(', ')}
+                  </div>
+                  
+                  <div className="flex gap-3 justify-end">
+                    <Button size="sm" variant="outline" className="gap-2">
+                      <Github className="w-4 h-4" />
+                      Code
+                    </Button>
+                    <Button size="sm" variant="outline" className="gap-2">
+                      <ExternalLink className="w-4 h-4" />
+                      Paper
+                    </Button>
+                  </div>
                 </div>
               </div>
-            </div>
-          ))}
+            );
+          })}
         </div>
       </div>
     </section>
