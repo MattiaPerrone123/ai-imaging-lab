@@ -21,15 +21,21 @@ const HeroSection = () => {
           </div>
           
           <div className="flex gap-2 flex-wrap md:grid md:grid-cols-2 lg:grid-cols-4 lg:gap-3">
-            <Button size="default" className="bg-primary hover:bg-primary/90 px-4 lg:px-8 flex-1 md:flex-none">
+            
+            
+          <a href="/Mattia_Perrone_Resume.pdf" target="_blank" rel="noopener noreferrer">
+            <Button size="default" className="bg-primary hover:bg-primary/90 px-4 lg:px-8 flex-1 md:flex-none w-full">
               <FileText className="w-4 h-4 mr-2" />
               View CV
             </Button>
+          </a>
 
-            <Button size="default" className="bg-teal hover:bg-teal/90 px-4 lg:px-8 flex-1 md:flex-none">
+            <a href="https://linkedin.com/in/mattia-perrone" target="_blank" rel="noopener noreferrer">
+            <Button size="default" className="bg-teal hover:bg-teal/90 px-4 lg:px-8 flex-1 md:flex-none w-full">
               <Linkedin className="w-4 h-4 mr-2" />
               LinkedIn
             </Button>
+          </a>
 
             <a href="https://scholar.google.com/citations?user=kqPVfW8AAAAJ&hl=en&oi=ao" target="_blank" rel="noopener noreferrer">
             <Button size="default" variant="outline" className="px-4 lg:px-8 border-primary/50 text-primary hover:bg-primary/10 flex-1 md:flex-none w-full">
@@ -38,11 +44,12 @@ const HeroSection = () => {
             </Button>
           </a>
 
-            <Button size="default" variant="outline" className="px-4 lg:px-8 border-black text-foreground hover:bg-black hover:text-white flex-1 md:flex-none">
+            <a href="https://github.com/MattiaPerrone123" target="_blank" rel="noopener noreferrer">
+            <Button size="default" variant="outline" className="px-4 lg:px-8 border-black text-foreground hover:bg-black hover:text-white flex-1 md:flex-none w-full">
               <Github className="w-4 h-4 mr-2" />
               GitHub
             </Button>
-          </div>
+          </a>
 
 
 
