@@ -116,7 +116,10 @@ const ProfessionalJourney = () => {
                         {milestone.organization}
                       </p>
                       <span className="text-muted-foreground">•</span>
-                      <span className="text-sm text-muted-foreground">{milestone.location}</span>
+                      <div className="flex items-center gap-1 text-sm text-muted-foreground">
+                        <MapPin className="w-3.5 h-3.5" />
+                        <span>{milestone.location}</span>
+                      </div>
                     </div>
                     
                     <p className="text-sm text-muted-foreground leading-relaxed mb-2">
@@ -124,10 +127,10 @@ const ProfessionalJourney = () => {
                     </p>
                     
                     {milestone.achievements && (
-                      <ul className="space-y-1 mt-3">
+                      <ul className="space-y-1.5 mt-3">
                         {milestone.achievements.map((achievement, idx) => (
-                          <li key={idx} className="text-sm text-muted-foreground leading-relaxed flex gap-2">
-                            <span className="text-primary mt-1">•</span>
+                          <li key={idx} className="text-sm text-muted-foreground leading-relaxed flex items-center gap-2">
+                            <span className="text-primary">•</span>
                             <span>{achievement}</span>
                           </li>
                         ))}
