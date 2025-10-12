@@ -7,7 +7,7 @@ const AboutSection = () => {
           <h2 className="text-3xl font-bold text-foreground">About Me</h2>
         </div>
         
-        <div className="bg-card border border-border rounded-xl p-8 space-y-6">
+        <div className="bg-card border border-border rounded-xl p-8 space-y-6 shadow-[0_8px_30px_-10px_rgba(59,130,246,0.2)] transition-all duration-300 hover:scale-[1.02] hover:shadow-[0_12px_40px_-10px_rgba(59,130,246,0.3)] cursor-pointer">
           <div className="space-y-6 text-base text-foreground leading-relaxed">
             <p>
               I am a Computer Vision Researcher and Biomedical Engineer with over 8 years of experience 

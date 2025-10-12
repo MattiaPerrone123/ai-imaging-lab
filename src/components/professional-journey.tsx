@@ -29,7 +29,7 @@ const ProfessionalJourney = () => {
   ];
 
   return (
-    <section className="w-full py-20">
+    <section id="professional-journey" className="w-full py-20">
       <div className="max-w-4xl mx-auto px-8">
       <div className="space-y-12">
         <div className="text-center space-y-4">

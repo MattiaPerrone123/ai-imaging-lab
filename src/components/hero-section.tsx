@@ -20,20 +20,20 @@ const HeroSection = () => {
             </p>
           </div>
           
-          <div className="flex gap-2 flex-wrap md:flex-nowrap">
-            <Button size="default" className="bg-primary hover:bg-primary/90 px-4">
+          <div className="flex gap-2 flex-wrap sm:grid sm:grid-cols-2 md:flex md:flex-nowrap">
+            <Button size="default" className="bg-primary hover:bg-primary/90 px-4 flex-1 sm:col-span-1">
               <FileText className="w-4 h-4 mr-2" />
               View CV
             </Button>
-            <Button size="default" className="bg-teal hover:bg-teal/90 px-4">
+            <Button size="default" className="bg-teal hover:bg-teal/90 px-4 flex-1 sm:col-span-1">
               <Linkedin className="w-4 h-4 mr-2" />
               LinkedIn
             </Button>
-            <Button size="default" variant="outline" className="px-4 border-primary/50 text-primary hover:bg-primary/10">
+            <Button size="default" variant="outline" className="px-4 border-primary/50 text-primary hover:bg-primary/10 flex-1 sm:col-span-1">
               <GraduationCap className="w-4 h-4 mr-2" />
               Publications
             </Button>
-            <Button size="default" variant="outline" className="px-4 border-black text-foreground hover:bg-black hover:text-white">
+            <Button size="default" variant="outline" className="px-4 border-black text-foreground hover:bg-black hover:text-white flex-1 sm:col-span-1">
               <Github className="w-4 h-4 mr-2" />
               GitHub
             </Button>
