@@ -23,7 +23,7 @@ const HeroSection = () => {
           <div className="flex gap-2 flex-wrap md:grid md:grid-cols-2 lg:grid-cols-4 lg:gap-3">
             
             
-          <a href="/Mattia_Perrone_Resume.pdf" target="_blank" rel="noopener noreferrer">
+          <a href={`${import.meta.env.BASE_URL}Mattia_Perrone_Resume.pdf`} target="_blank" rel="noopener noreferrer">
             <Button size="default" className="bg-primary hover:bg-primary/90 px-4 lg:px-8 flex-1 md:flex-none w-full">
               <FileText className="w-4 h-4 mr-2" />
               View CV
