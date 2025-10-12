@@ -4,10 +4,10 @@ import headshotImage from "@/assets/headshot.jpg";
 
 const HeroSection = () => {
   return (
-    <section id="home" className="max-w-6xl mx-auto px-8 py-20 md:py-32 mt-16">
-      <div className="grid md:grid-cols-2 gap-20 items-center">
-        <div className="space-y-8">
-          <div className="space-y-6">
+    <section id="home" className="max-w-6xl mx-auto px-8 py-12 md:py-20 mt-16">
+      <div className="grid md:grid-cols-2 gap-12 items-center">
+        <div className="space-y-6">
+          <div className="space-y-4">
             <h1 className="text-5xl md:text-6xl font-bold text-foreground leading-tight">
               Mattia Perrone
             </h1>
@@ -45,7 +45,7 @@ const HeroSection = () => {
             <img
               src={headshotImage}
               alt="Mattia Perrone"
-              className="w-72 h-80 object-cover rounded-3xl shadow-sm border border-border"
+              className="w-80 h-96 object-cover rounded-3xl shadow-sm border border-border"
             />
           </div>
         </div>
