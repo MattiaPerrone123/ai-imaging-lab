@@ -52,7 +52,7 @@ const PublicationsSection = () => {
               <div key={index} className="p-6 md:p-8 rounded-2xl border-2 border-border/50 transition-all duration-300 hover:shadow-lg hover:scale-[1.01] hover:border-border">
                 <div className="space-y-4 relative">
                   <div>
-                    <h3 className="text-3xl font-bold text-foreground leading-tight mb-3">
+                    <h3 className="text-2xl font-bold text-foreground leading-tight mb-3">
                       {pub.title}
                     </h3>
                     <div className="text-sm text-muted-foreground space-y-2">
@@ -66,23 +66,25 @@ const PublicationsSection = () => {
                     </div>
                   </div>
                   
-                  <p className="text-base text-muted-foreground leading-relaxed">
+                  <p className="text-lg text-muted-foreground leading-relaxed">
                     {pub.abstract}
                   </p>
                   
-                  <div className="text-sm text-muted-foreground">
-                    <span className="font-semibold">Keywords:</span> {pub.keywords.join(', ')}
-                  </div>
-                  
-                  <div className="flex gap-3 justify-end">
-                    <Button size="sm" variant="outline" className="gap-2">
-                      <Github className="w-4 h-4" />
-                      Code
-                    </Button>
-                    <Button size="sm" variant="outline" className="gap-2">
-                      <ExternalLink className="w-4 h-4" />
-                      Paper
-                    </Button>
+                  <div className="flex items-center justify-between flex-wrap gap-4">
+                    <div className="text-base text-muted-foreground">
+                      <span className="font-semibold">Keywords:</span> {pub.keywords.join(', ')}
+                    </div>
+                    
+                    <div className="flex gap-3">
+                      <Button size="sm" variant="outline" className="gap-2">
+                        <Github className="w-4 h-4" />
+                        Code
+                      </Button>
+                      <Button size="sm" variant="outline" className="gap-2">
+                        <ExternalLink className="w-4 h-4" />
+                        Paper
+                      </Button>
+                    </div>
                   </div>
                 </div>
               </div>

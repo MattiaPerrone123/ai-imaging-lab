@@ -66,16 +66,16 @@ const ProjectsSection = () => {
               
               <div className="space-y-6">
                 <div>
-                  <h3 className="text-3xl font-bold text-foreground mb-4">
+                  <h3 className="text-2xl font-bold text-foreground mb-2">
                     {project.title}
                   </h3>
-                  <p className="text-muted-foreground leading-relaxed text-base">
+                  <p className="text-muted-foreground leading-relaxed text-lg">
                     {project.description}
                   </p>
                 </div>
                 
                 <div>
-                  <h4 className="font-semibold text-foreground mb-3 text-sm">Technologies</h4>
+                  <h4 className="font-semibold text-foreground mb-2 text-sm">Technologies</h4>
                   <div className="flex flex-wrap gap-2">
                     {project.technologies.map((tech) => (
                       <Badge key={tech} variant="tech" className="text-xs px-2.5 py-0.5">
@@ -86,10 +86,10 @@ const ProjectsSection = () => {
                 </div>
                 
                 <div>
-                  <h4 className="font-semibold text-foreground mb-3 text-sm">Key Achievements</h4>
-                  <ul className="space-y-2.5">
+                  <h4 className="font-semibold text-foreground mb-2 text-sm">Key Achievements</h4>
+                  <ul className="space-y-1.5">
                     {project.features.map((feature, i) => (
-                      <li key={i} className="flex items-start text-sm text-muted-foreground">
+                      <li key={i} className="flex items-start text-base text-muted-foreground">
                         <span className="w-1.5 h-1.5 bg-primary rounded-full mt-2 mr-3 shrink-0"></span>
                         {feature}
                       </li>
