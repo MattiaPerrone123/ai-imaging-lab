@@ -52,7 +52,7 @@ const HeroSection = () => {
           </a>
 
 
-
+          </div>
         </div>
         
         <div className="flex justify-center md:justify-end">
