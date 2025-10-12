@@ -25,19 +25,27 @@ const HeroSection = () => {
               <FileText className="w-4 h-4 mr-2" />
               View CV
             </Button>
+
             <Button size="default" className="bg-teal hover:bg-teal/90 px-4 lg:px-8 flex-1 md:flex-none">
               <Linkedin className="w-4 h-4 mr-2" />
               LinkedIn
             </Button>
-            <Button size="default" variant="outline" className="px-4 lg:px-8 border-primary/50 text-primary hover:bg-primary/10 flex-1 md:flex-none">
+
+            <a href="https://scholar.google.com/citations?user=kqPVfW8AAAAJ&hl=en&oi=ao" target="_blank" rel="noopener noreferrer">
+            <Button size="default" variant="outline" className="px-4 lg:px-8 border-primary/50 text-primary hover:bg-primary/10 flex-1 md:flex-none w-full">
               <GraduationCap className="w-4 h-4 mr-2" />
               Papers
             </Button>
+          </a>
+
             <Button size="default" variant="outline" className="px-4 lg:px-8 border-black text-foreground hover:bg-black hover:text-white flex-1 md:flex-none">
               <Github className="w-4 h-4 mr-2" />
               GitHub
             </Button>
           </div>
+
+
+
         </div>
         
         <div className="flex justify-center md:justify-end">
