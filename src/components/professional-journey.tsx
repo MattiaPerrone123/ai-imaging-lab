@@ -92,7 +92,7 @@ const ProfessionalJourney = () => {
               return (
                 <div key={index} className="relative flex items-start gap-8 group">
                   <div className="relative">
-                    <div className={`${milestone.color} w-16 h-16 rounded-full flex items-center justify-center shadow-lg z-10 relative transition-all duration-300 group-hover:scale-110 group-hover:shadow-xl overflow-hidden border-2 border-black`}>
+                    <div className={`${milestone.color} w-16 h-16 rounded-full flex items-center justify-center shadow-lg z-10 relative transition-all duration-300 group-hover:scale-110 group-hover:shadow-xl overflow-hidden border border-black`}>
                       {milestone.bigCircleImage ? (
                         <img src={milestone.bigCircleImage} alt="" className="w-full h-full object-cover" />
                       ) : (
