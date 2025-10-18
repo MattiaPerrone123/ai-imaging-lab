@@ -91,23 +91,14 @@ const ProfessionalJourney = () => {
         </div>
         
         <div className="relative">
+          <div className="absolute left-8 top-0 bottom-0 w-0.5 bg-black/30"></div>
+          
           <div className="space-y-12">
             {milestones.map((milestone, index) => {
               const IconComponent = milestone.icon;
               return (
                 <div key={index} className="relative flex items-start gap-8 group">
                   <div className="relative">
-                    {index < milestones.length - 1 && (
-                      <div 
-                        className="absolute left-8 w-0.5"
-                        style={{ 
-                          backgroundColor: milestone.brandColor, 
-                          opacity: 0.3,
-                          top: '4rem',
-                          height: 'calc(100% + 3rem)'
-                        }}
-                      />
-                    )}
                     <div 
                       className="w-16 h-16 rounded-full flex items-center justify-center shadow-lg z-10 relative transition-all duration-300 group-hover:scale-110 group-hover:shadow-xl overflow-hidden border-2 border-black"
                       style={{ backgroundColor: milestone.brandColor }}
@@ -157,7 +148,7 @@ const ProfessionalJourney = () => {
                       <ul className="space-y-1.5 mt-3">
                         {milestone.achievements.map((achievement, idx) => (
                           <li key={idx} className="text-sm text-muted-foreground leading-relaxed flex items-center gap-2">
-                            <span className="text-primary">•</span>
+                            <span className="text-foreground">•</span>
                             <span>{achievement}</span>
                           </li>
                         ))}
