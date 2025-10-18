@@ -40,7 +40,7 @@ const ProfessionalJourney = () => {
     {
       year: "2021-2022",
       type: "Education",
-      title: "Postdoctoral Fellowship",
+      title: "MS in Biomedical Engineering",
       organization: "University Of Illinois Chicago",
       location: "Chicago, IL",
       description: "Pioneered novel approaches to multi-modal medical image fusion for cancer diagnosis. Key achievements:",
