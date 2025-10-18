@@ -18,7 +18,8 @@ const ProfessionalJourney = () => {
         "Led team of 12 researchers across multiple institutions"
       ],
       icon: Building,
-      color: "bg-primary"
+      color: "bg-primary",
+      bigCircleImage: `${import.meta.env.BASE_URL}icon/rush.png`
     },
     {
       year: "2020",
@@ -33,7 +34,8 @@ const ProfessionalJourney = () => {
         "Collaborated with 50+ hospitals worldwide for data collection"
       ],
       icon: Briefcase,
-      color: "bg-primary"
+      color: "bg-primary",
+      bigCircleImage: `${import.meta.env.BASE_URL}icon/arcadia.png`
     },
     {
       year: "2018",
@@ -48,7 +50,8 @@ const ProfessionalJourney = () => {
         "3 first-author publications in top-tier journals"
       ],
       icon: GraduationCap,
-      color: "bg-cyan-500"
+      color: "bg-cyan-500",
+      bigCircleImage: `${import.meta.env.BASE_URL}icon/uic.png`
     },
     {
       year: "2016",
@@ -59,8 +62,7 @@ const ProfessionalJourney = () => {
       description: "Thesis on advanced computer vision techniques for automated diagnosis systems",
       icon: GraduationCap,
       color: "bg-cyan-500",
-      bigCircleImage: `${import.meta.env.BASE_URL}icon/uic.png`,
-      smallCircleIcon: Award
+      bigCircleImage: `${import.meta.env.BASE_URL}icon/polimi.jpeg`
     },
     {
       year: "2014",
@@ -71,7 +73,7 @@ const ProfessionalJourney = () => {
       description: "Pioneered AI-driven approaches to medical image analysis and interpretation",
       icon: Award,
       color: "bg-cyan-500",
-      smallCircleImage: `${import.meta.env.BASE_URL}icon/uic.png`
+      bigCircleImage: `${import.meta.env.BASE_URL}icon/polimi.jpeg`
     }
   ];
 
