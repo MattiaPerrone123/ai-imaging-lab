@@ -99,11 +99,12 @@ const ProfessionalJourney = () => {
                   <div className="relative">
                     {index < milestones.length - 1 && (
                       <div 
-                        className="absolute left-8 top-8 w-0.5"
+                        className="absolute left-8 w-0.5"
                         style={{ 
                           backgroundColor: milestone.brandColor, 
                           opacity: 0.3,
-                          height: 'calc(100% + 3rem + 4rem)'
+                          top: '4rem',
+                          height: 'calc(100% + 3rem)'
                         }}
                       />
                     )}
@@ -124,7 +125,7 @@ const ProfessionalJourney = () => {
                       <Badge 
                         variant="secondary" 
                         style={{ backgroundColor: milestone.brandColor, color: 'white' }}
-                        className="transition-colors duration-200 hover:opacity-90"
+                        className="transition-colors duration-200 hover:opacity-90 border-2 border-black"
                       >
                         {milestone.type}
                       </Badge>
