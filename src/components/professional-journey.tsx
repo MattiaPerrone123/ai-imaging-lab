@@ -1,3 +1,4 @@
+import React from "react";
 import { Badge } from "@/components/ui/badge";
 import { Card } from "@/components/ui/card";
 import { Building, GraduationCap, MapPin, Calendar, Briefcase, Award } from "lucide-react";
@@ -57,7 +58,9 @@ const ProfessionalJourney = () => {
       location: "Cambridge, MA",
       description: "Thesis on advanced computer vision techniques for automated diagnosis systems",
       icon: GraduationCap,
-      color: "bg-cyan-500"
+      color: "bg-cyan-500",
+      bigCircleImage: "/icon/uic.png",
+      smallCircleIcon: Award
     },
     {
       year: "2014",
@@ -67,7 +70,8 @@ const ProfessionalJourney = () => {
       location: "Baltimore, MD",
       description: "Pioneered AI-driven approaches to medical image analysis and interpretation",
       icon: Award,
-      color: "bg-cyan-500"
+      color: "bg-cyan-500",
+      smallCircleImage: "/icon/uic.png"
     }
   ];
 
@@ -88,9 +92,19 @@ const ProfessionalJourney = () => {
               return (
                 <div key={index} className="relative flex items-start gap-8 group">
                   <div className="relative">
-                    <div className={`${milestone.color} w-16 h-16 rounded-full flex items-center justify-center shadow-lg z-10 relative transition-all duration-300 group-hover:scale-110 group-hover:shadow-xl`}>
-                      <IconComponent className="w-8 h-8 text-white" />
-                      <div className="absolute -top-1 -right-1 w-5 h-5 bg-background border-2 border-border rounded-full"></div>
+                    <div className={`${milestone.color} w-16 h-16 rounded-full flex items-center justify-center shadow-lg z-10 relative transition-all duration-300 group-hover:scale-110 group-hover:shadow-xl overflow-hidden`}>
+                      {milestone.bigCircleImage ? (
+                        <img src={milestone.bigCircleImage} alt="" className="w-full h-full object-cover" />
+                      ) : (
+                        <IconComponent className="w-8 h-8 text-white" />
+                      )}
+                      <div className="absolute -top-1 -right-1 w-5 h-5 bg-background border-2 border-border rounded-full overflow-hidden flex items-center justify-center">
+                        {milestone.smallCircleImage ? (
+                          <img src={milestone.smallCircleImage} alt="" className="w-full h-full object-cover" />
+                        ) : milestone.smallCircleIcon ? (
+                          React.createElement(milestone.smallCircleIcon, { className: "w-3 h-3 text-foreground" })
+                        ) : null}
+                      </div>
                     </div>
                   </div>
                   
