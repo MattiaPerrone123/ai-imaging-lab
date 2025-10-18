@@ -59,7 +59,7 @@ const ProfessionalJourney = () => {
       description: "Thesis on advanced computer vision techniques for automated diagnosis systems",
       icon: GraduationCap,
       color: "bg-cyan-500",
-      bigCircleImage: "/icon/uic.png",
+      bigCircleImage: `${import.meta.env.BASE_URL}icon/uic.png`,
       smallCircleIcon: Award
     },
     {
