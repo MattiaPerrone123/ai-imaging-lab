@@ -12,17 +12,14 @@ const ContactSection = () => {
         </div>
         
         <div className="grid md:grid-cols-2 gap-8">
-          <Card>
+          <Card className="transition-all duration-300 hover:scale-105 hover:shadow-[0_12px_40px_-10px_rgba(59,130,246,0.3)] cursor-pointer">
             <CardHeader>
               <CardTitle className="flex items-center gap-2">
                 <Mail className="w-5 h-5 text-primary" />
                 Email
               </CardTitle>
             </CardHeader>
-            <CardContent className="space-y-4">
-              <p className="text-muted-foreground">
-                For research collaborations, speaking engagements, or general inquiries
-              </p>
+            <CardContent>
               <Button className="w-full">
                 <Mail className="w-4 h-4 mr-2" />
                 sarah.chen@university.edu
@@ -30,18 +27,15 @@ const ContactSection = () => {
             </CardContent>
           </Card>
           
-          <Card>
+          <Card className="transition-all duration-300 hover:scale-105 hover:shadow-[0_12px_40px_-10px_rgba(59,130,246,0.3)] cursor-pointer">
             <CardHeader>
               <CardTitle className="flex items-center gap-2">
-                <Linkedin className="w-5 h-5 text-teal" />
+                <Linkedin className="w-5 h-5 text-blue-600" />
                 LinkedIn
               </CardTitle>
             </CardHeader>
-            <CardContent className="space-y-4">
-              <p className="text-muted-foreground">
-                Connect with me for professional networking and industry insights
-              </p>
-              <Button variant="teal" className="w-full">
+            <CardContent>
+              <Button className="w-full border-blue-600 bg-blue-100 text-blue-600 hover:bg-blue-200">
                 <Linkedin className="w-4 h-4 mr-2" />
                 Connect on LinkedIn
               </Button>
