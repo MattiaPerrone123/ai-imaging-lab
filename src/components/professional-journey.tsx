@@ -19,6 +19,7 @@ const ProfessionalJourney = () => {
       ],
       icon: Building,
       color: "bg-primary",
+      brandColor: "hsl(142, 76%, 36%)", // Rush green
       bigCircleImage: `${import.meta.env.BASE_URL}icon/rumc.png`
     },
     {
@@ -35,6 +36,7 @@ const ProfessionalJourney = () => {
       ],
       icon: Briefcase,
       color: "bg-primary",
+      brandColor: "hsl(0, 60%, 40%)", // Arcadia maroon
       bigCircleImage: `${import.meta.env.BASE_URL}icon/arcadia.png`
     },
     {
@@ -51,6 +53,7 @@ const ProfessionalJourney = () => {
       ],
       icon: GraduationCap,
       color: "bg-cyan-500",
+      brandColor: "hsl(0, 85%, 50%)", // UIC red
       bigCircleImage: `${import.meta.env.BASE_URL}icon/uic.png`
     },
     {
@@ -62,6 +65,7 @@ const ProfessionalJourney = () => {
       description: "Thesis on advanced computer vision techniques for automated diagnosis systems",
       icon: GraduationCap,
       color: "bg-cyan-500",
+      brandColor: "hsl(210, 100%, 45%)", // Polimi blue
       bigCircleImage: `${import.meta.env.BASE_URL}icon/polimi.jpeg`
     },
     {
@@ -73,6 +77,7 @@ const ProfessionalJourney = () => {
       description: "Pioneered AI-driven approaches to medical image analysis and interpretation",
       icon: Award,
       color: "bg-cyan-500",
+      brandColor: "hsl(210, 100%, 45%)", // Polimi blue
       bigCircleImage: `${import.meta.env.BASE_URL}icon/polimi.jpeg`
     }
   ];
@@ -107,7 +112,8 @@ const ProfessionalJourney = () => {
                     <div className="flex items-center gap-3 mb-3">
                       <Badge 
                         variant="secondary" 
-                        className={`${milestone.type === 'Career' ? 'bg-blue-500/90 text-white hover:bg-blue-600' : 'bg-cyan-400/90 text-white hover:bg-cyan-500'} transition-colors duration-200`}
+                        style={{ backgroundColor: milestone.brandColor, color: 'white' }}
+                        className="transition-colors duration-200 hover:opacity-90"
                       >
                         {milestone.type}
                       </Badge>
@@ -121,7 +127,7 @@ const ProfessionalJourney = () => {
                       {milestone.title}
                     </h3>
                     <div className="flex flex-col sm:flex-row sm:items-center gap-2 mb-3">
-                      <p className="text-primary font-medium">
+                      <p className="font-medium" style={{ color: milestone.brandColor }}>
                         {milestone.organization}
                       </p>
                       <span className="text-muted-foreground hidden sm:inline">•</span>
