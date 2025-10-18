@@ -19,7 +19,7 @@ const ProfessionalJourney = () => {
       ],
       icon: Building,
       color: "bg-primary",
-      brandColor: "hsl(142, 41%, 29%)", // Rush green
+      brandColor: "hsl(142, 41%, 34%)", // Rush green
       bigCircleImage: `${import.meta.env.BASE_URL}icon/rumc.png`
     },
     {
@@ -65,7 +65,7 @@ const ProfessionalJourney = () => {
       description: "Thesis on advanced computer vision techniques for automated diagnosis systems",
       icon: GraduationCap,
       color: "bg-cyan-500",
-      brandColor: "hsl(216, 68%, 19%)", // Polimi blue
+      brandColor: "hsl(216, 68%, 29%)", // Polimi blue
       bigCircleImage: `${import.meta.env.BASE_URL}icon/polimi.jpeg`
     },
     {
@@ -77,7 +77,7 @@ const ProfessionalJourney = () => {
       description: "Pioneered AI-driven approaches to medical image analysis and interpretation",
       icon: Award,
       color: "bg-cyan-500",
-      brandColor: "hsl(216, 68%, 19%)", // Polimi blue
+      brandColor: "hsl(216, 68%, 29%)", // Polimi blue
       bigCircleImage: `${import.meta.env.BASE_URL}icon/polimi.jpeg`
     }
   ];
