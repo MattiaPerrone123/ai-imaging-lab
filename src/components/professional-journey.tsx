@@ -99,7 +99,10 @@ const ProfessionalJourney = () => {
               return (
                 <div key={index} className="relative flex items-start gap-8 group">
                   <div className="relative">
-                    <div className={`${milestone.color} w-16 h-16 rounded-full flex items-center justify-center shadow-lg z-10 relative transition-all duration-300 group-hover:scale-110 group-hover:shadow-xl overflow-hidden border-2 border-black`}>
+                    <div 
+                      className="w-16 h-16 rounded-full flex items-center justify-center shadow-lg z-10 relative transition-all duration-300 group-hover:scale-110 group-hover:shadow-xl overflow-hidden border-2 border-black"
+                      style={{ backgroundColor: milestone.brandColor }}
+                    >
                       {milestone.bigCircleImage ? (
                         <img src={milestone.bigCircleImage} alt="" className="w-full h-full object-cover" />
                       ) : (
@@ -127,7 +130,7 @@ const ProfessionalJourney = () => {
                       {milestone.title}
                     </h3>
                     <div className="flex flex-col sm:flex-row sm:items-center gap-2 mb-3">
-                      <p className="font-medium" style={{ color: milestone.brandColor }}>
+                      <p className="text-primary font-medium">
                         {milestone.organization}
                       </p>
                       <span className="text-muted-foreground hidden sm:inline">•</span>
