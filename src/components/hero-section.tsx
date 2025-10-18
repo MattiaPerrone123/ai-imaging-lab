@@ -31,7 +31,7 @@ const HeroSection = () => {
           </a>
 
             <a href="https://linkedin.com/in/mattia-perrone" target="_blank" rel="noopener noreferrer">
-            <Button size="default" className="border-blue-600 bg-blue-100 text-blue-600 hover:bg-blue-200 px-4 lg:px-8 flex-1 md:flex-none w-full">
+            <Button size="default" className="border-2 border-blue-600 bg-blue-100 text-blue-600 hover:bg-blue-200 px-4 lg:px-8 flex-1 md:flex-none w-full">
               <Linkedin className="w-4 h-4 mr-2" />
               LinkedIn
             </Button>
