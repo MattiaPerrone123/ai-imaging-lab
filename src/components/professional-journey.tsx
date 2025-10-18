@@ -99,8 +99,12 @@ const ProfessionalJourney = () => {
                   <div className="relative">
                     {index < milestones.length - 1 && (
                       <div 
-                        className="absolute left-8 top-16 w-0.5 h-[calc(100%+3rem)]"
-                        style={{ backgroundColor: milestone.brandColor, opacity: 0.3 }}
+                        className="absolute left-8 top-8 w-0.5"
+                        style={{ 
+                          backgroundColor: milestone.brandColor, 
+                          opacity: 0.3,
+                          height: 'calc(100% + 3rem + 4rem)'
+                        }}
                       />
                     )}
                     <div 
