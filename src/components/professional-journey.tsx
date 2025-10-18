@@ -71,7 +71,7 @@ const ProfessionalJourney = () => {
       description: "Pioneered AI-driven approaches to medical image analysis and interpretation",
       icon: Award,
       color: "bg-cyan-500",
-      smallCircleImage: "/icon/uic.png"
+      smallCircleImage: `${import.meta.env.BASE_URL}icon/uic.png`
     }
   ];
 
