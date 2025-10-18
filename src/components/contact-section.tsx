@@ -12,7 +12,7 @@ const ContactSection = () => {
         </div>
         
         <div className="grid md:grid-cols-2 gap-8">
-          <Card className="transition-all duration-300 hover:scale-105 hover:shadow-[0_12px_40px_-10px_rgba(59,130,246,0.3)] cursor-pointer">
+          <Card className="transition-all duration-300 hover:scale-[1.02] hover:shadow-lg cursor-pointer">
             <CardHeader>
               <CardTitle className="flex items-center gap-2">
                 <Mail className="w-5 h-5 text-primary" />
@@ -27,7 +27,7 @@ const ContactSection = () => {
             </CardContent>
           </Card>
           
-          <Card className="transition-all duration-300 hover:scale-105 hover:shadow-[0_12px_40px_-10px_rgba(59,130,246,0.3)] cursor-pointer">
+          <Card className="transition-all duration-300 hover:scale-[1.02] hover:shadow-lg cursor-pointer">
             <CardHeader>
               <CardTitle className="flex items-center gap-2">
                 <Linkedin className="w-5 h-5 text-blue-600" />
