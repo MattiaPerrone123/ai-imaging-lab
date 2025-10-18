@@ -19,7 +19,7 @@ const ProfessionalJourney = () => {
       ],
       icon: Building,
       color: "bg-primary",
-      bigCircleImage: `${import.meta.env.BASE_URL}icon/rush.png`
+      bigCircleImage: `${import.meta.env.BASE_URL}icon/rumc.png`
     },
     {
       year: "2022-2023",
