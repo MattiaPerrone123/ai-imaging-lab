@@ -98,7 +98,7 @@ const ProfessionalJourney = () => {
                       ) : (
                         <IconComponent className="w-8 h-8 text-white" />
                       )}
-                      <div className="absolute -top-1 -right-1 w-5 h-5 bg-background border-2 border-border rounded-full overflow-hidden flex items-center justify-center">
+                      <div className={`absolute -top-1 -right-1 w-5 h-5 border-2 border-border rounded-full overflow-hidden flex items-center justify-center ${!milestone.smallCircleImage ? 'bg-background' : ''}`}>
                         {milestone.smallCircleImage ? (
                           <img src={milestone.smallCircleImage} alt="" className="w-full h-full object-cover" />
                         ) : milestone.smallCircleIcon ? (
