@@ -6,11 +6,11 @@ import { Building, GraduationCap, MapPin, Calendar, Briefcase, Award } from "luc
 const ProfessionalJourney = () => {
   const milestones = [
     {
-      year: "2021",
+      year: "2023-Now",
       type: "Career",
-      title: "Principal Research Scientist",
-      organization: "Stanford Medical AI Lab",
-      location: "Stanford, CA",
+      title: "Research Scientist",
+      organization: "Rush University Medical Center",
+      location: "Chicago, IL",
       description: "Leading interdisciplinary teams developing FDA-approved algorithms for automated radiology screening. Key achievements:",
       achievements: [
         "Developed 3 FDA-approved AI algorithms for chest X-ray screening",
@@ -22,11 +22,11 @@ const ProfessionalJourney = () => {
       bigCircleImage: `${import.meta.env.BASE_URL}icon/rush.png`
     },
     {
-      year: "2020",
+      year: "2022-2023",
       type: "Career", 
-      title: "Senior Research Engineer",
-      organization: "Google Health AI",
-      location: "Mountain View, CA",
+      title: "Research Assistant",
+      organization: "Arcadia University",
+      location: "Glenside, PA",
       description: "Developed deep learning models for early disease detection in medical imaging. Key achievements:",
       achievements: [
         "Created novel architectures for multi-task learning in medical imaging",
@@ -38,11 +38,11 @@ const ProfessionalJourney = () => {
       bigCircleImage: `${import.meta.env.BASE_URL}icon/arcadia.png`
     },
     {
-      year: "2018",
+      year: "2021-2022",
       type: "Education",
       title: "Postdoctoral Fellowship",
-      organization: "Politecnico di Milano",
-      location: "Milan, Italy",
+      organization: "University Of Illinois Chicago",
+      location: "Chicago, IL",
       description: "Pioneered novel approaches to multi-modal medical image fusion for cancer diagnosis. Key achievements:",
       achievements: [
         "Published in Nature Machine Intelligence on multi-modal fusion techniques",
@@ -54,10 +54,10 @@ const ProfessionalJourney = () => {
       bigCircleImage: `${import.meta.env.BASE_URL}icon/uic.png`
     },
     {
-      year: "2016",
+      year: "2020-2022",
       type: "Education",
-      title: "Ph.D. in Biomedical Engineering",
-      organization: "MIT",
+      title: "MS in Biomedical Engineering",
+      organization: "Politecnico di Milano",
       location: "Cambridge, MA",
       description: "Thesis on advanced computer vision techniques for automated diagnosis systems",
       icon: GraduationCap,
@@ -65,11 +65,11 @@ const ProfessionalJourney = () => {
       bigCircleImage: `${import.meta.env.BASE_URL}icon/polimi.jpeg`
     },
     {
-      year: "2014",
+      year: "2017-2020",
       type: "Education",
-      title: "Research Scientist",
-      organization: "Johns Hopkins Medical Center",
-      location: "Baltimore, MD",
+      title: "BS in Biomedical Engineering",
+      organization: "Politecnico di Milano",
+      location: "Milan, Italy",
       description: "Pioneered AI-driven approaches to medical image analysis and interpretation",
       icon: Award,
       color: "bg-cyan-500",
