@@ -19,7 +19,7 @@ const ProfessionalJourney = () => {
       ],
       icon: Building,
       color: "bg-primary",
-      brandColor: "hsl(142, 76%, 36%)", // Rush green
+      brandColor: "hsl(142, 41%, 29%)", // Rush green
       bigCircleImage: `${import.meta.env.BASE_URL}icon/rumc.png`
     },
     {
@@ -53,7 +53,7 @@ const ProfessionalJourney = () => {
       ],
       icon: GraduationCap,
       color: "bg-cyan-500",
-      brandColor: "hsl(0, 85%, 50%)", // UIC red
+      brandColor: "hsl(359, 66%, 52%)", // UIC red
       bigCircleImage: `${import.meta.env.BASE_URL}icon/uic.png`
     },
     {
@@ -61,11 +61,11 @@ const ProfessionalJourney = () => {
       type: "Education",
       title: "MS in Biomedical Engineering",
       organization: "Politecnico di Milano",
-      location: "Cambridge, MA",
+      location: "Milan, Italy",
       description: "Thesis on advanced computer vision techniques for automated diagnosis systems",
       icon: GraduationCap,
       color: "bg-cyan-500",
-      brandColor: "hsl(210, 100%, 45%)", // Polimi blue
+      brandColor: "hsl(216, 68%, 19%)", // Polimi blue
       bigCircleImage: `${import.meta.env.BASE_URL}icon/polimi.jpeg`
     },
     {
@@ -77,7 +77,7 @@ const ProfessionalJourney = () => {
       description: "Pioneered AI-driven approaches to medical image analysis and interpretation",
       icon: Award,
       color: "bg-cyan-500",
-      brandColor: "hsl(210, 100%, 45%)", // Polimi blue
+      brandColor: "hsl(216, 68%, 19%)", // Polimi blue
       bigCircleImage: `${import.meta.env.BASE_URL}icon/polimi.jpeg`
     }
   ];
