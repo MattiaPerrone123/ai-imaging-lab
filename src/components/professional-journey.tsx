@@ -111,7 +111,18 @@ const ProfessionalJourney = () => {
                     </div>
                   </div>
                   
-                  <Card className="flex-1 p-6 transition-all duration-300 group-hover:scale-[1.02] group-hover:shadow-[0_12px_40px_-10px_rgba(59,130,246,0.3)] cursor-pointer">
+                  <Card 
+                    className="flex-1 p-6 transition-all duration-300 group-hover:scale-[1.02] cursor-pointer"
+                    style={{
+                      ['--hover-shadow-color' as string]: milestone.brandColor,
+                    }}
+                    onMouseEnter={(e) => {
+                      e.currentTarget.style.boxShadow = `0 12px 40px -10px ${milestone.brandColor.replace('hsl(', 'hsla(').replace(')', ', 0.3)')}`;
+                    }}
+                    onMouseLeave={(e) => {
+                      e.currentTarget.style.boxShadow = '';
+                    }}
+                  >
                     <div className="flex items-center gap-3 mb-3">
                       <Badge 
                         variant="secondary" 
