@@ -6,10 +6,10 @@ import { ExternalLink, Github } from "lucide-react";
 const ProjectsSection = () => {
   const projects = [
     {
-      title: "BrainNet: Automated Brain Tumor Detection",
+      title: "Automated Report Generation from Lumbar Spine MRI",
       description: "Deep learning framework for real-time brain tumor segmentation and classification in MRI scans with 97% accuracy.",
-      technologies: ["PyTorch", "3D U-Net", "DICOM", "Python"],
-      features: [
+      technologies: ["PyTorch", "Vision-Language Model", "LoRA Fine-Tuning"],
+      features: [ 
         "FDA breakthrough device designation",
         "Deployed in 12+ hospitals",
         "Reduces radiologist reading time by 60%",
@@ -17,9 +17,9 @@ const ProjectsSection = () => {
       ],
     },
     {
-      title: "LungAI: CT Pneumonia Detection System",
+      title: "Autoencoder-Based Representation of Lumbar Disc Geometry",
       description: "Computer vision model for rapid pneumonia diagnosis from chest CT scans with clinical validation.",
-      technologies: ["TensorFlow", "ResNet-50", "CUDA", "Docker"],
+      technologies: ["PyTorch", "Autoencoder", "Segmentation", "DICOM"],
       features: [
         "94% sensitivity, 92% specificity",
         "Processes scans in under 30 seconds",
@@ -28,9 +28,9 @@ const ProjectsSection = () => {
       ],
     },
     {
-      title: "AlzheimerPredict: Early Detection Platform",
+      title: "Deep Learning Prediction of Wear in Knee Implants",
       description: "PET scan analysis platform using deep learning for early-stage Alzheimer's detection and progression modeling.",
-      technologies: ["PyTorch", "3D CNN", "NumPy", "Flask"],
+      technologies: ["PyTorch", "Transformer", "CNN", "NumPy"],
       features: [
         "Predicts progression 3-5 years in advance",
         "85% accuracy in early detection",
@@ -76,7 +76,7 @@ const ProjectsSection = () => {
                 </div>
                 
                 <div>
-                  <h4 className="font-semibold text-foreground mb-2 text-sm">Technologies</h4>
+                  <h4 className="font-semibold text-foreground mb-2 text-sm">Focus</h4>
                   <div className="flex flex-wrap gap-2">
                     {project.technologies.map((tech) => (
                       <Badge key={tech} variant="tech" className="text-xs px-2.5 py-0.5">
