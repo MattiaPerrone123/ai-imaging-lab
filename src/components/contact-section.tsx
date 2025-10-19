@@ -20,10 +20,12 @@ const ContactSection = () => {
               </CardTitle>
             </CardHeader>
             <CardContent>
-              <Button className="w-full">
-                <Mail className="w-4 h-4 mr-2" />
-                sarah.chen@university.edu
-              </Button>
+              <a href="mailto:your.email@example.com">
+                <Button className="w-full">
+                  <Mail className="w-4 h-4 mr-2" />
+                  perronemattia98@gmail.com
+                </Button>
+              </a>
             </CardContent>
           </Card>
           
@@ -35,10 +37,12 @@ const ContactSection = () => {
               </CardTitle>
             </CardHeader>
             <CardContent>
-              <Button className="w-full border-blue-600 bg-blue-100 text-blue-600 hover:bg-blue-200">
-                <Linkedin className="w-4 h-4 mr-2" />
-                Connect on LinkedIn
-              </Button>
+              <a href="https://linkedin.com/in/mattia-perrone" target="_blank" rel="noopener noreferrer">
+                <Button className="w-full border-blue-600 bg-blue-100 text-blue-600 hover:bg-blue-200">
+                  <Linkedin className="w-4 h-4 mr-2" />
+                  Connect on LinkedIn
+                </Button>
+              </a>
             </CardContent>
           </Card>
         </div>

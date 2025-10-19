@@ -10,21 +10,24 @@ const AboutSection = () => {
         <div className="bg-card border border-border rounded-xl p-8 space-y-6 shadow-[0_8px_30px_-10px_rgba(59,130,246,0.2)] transition-all duration-300 hover:scale-[1.02] hover:shadow-[0_12px_40px_-10px_rgba(59,130,246,0.3)] cursor-pointer">
           <div className="space-y-6 text-base text-foreground leading-relaxed">
             <p>
-              I am a Computer Vision Researcher and Biomedical Engineer with over 8 years of experience 
-              developing AI solutions for medical imaging. My work focuses on creating intelligent systems that can 
-              assist clinicians in early disease detection and precision treatment planning.
+              I am a Research Scientist with 3+ years of experience in machine learning applied to the medical field. 
+              I currently work at Rush University Medical Center, where I develop machine learning models for medical 
+              imaging and clinical text, particularly focused on low back pain. I approach this problem through 
+              complementary AI-driven studies, including vision–language models for automated radiology report generation 
+              from MRI, deep learning–based analysis of spine metabolism on PET-CT and biopsychosocial modeling of low 
+              back pain from tabular data.
             </p>
             
             <p>
-              Currently serving as Principal Research Scientist at Stanford Medical AI Lab, I lead interdisciplinary 
-              teams developing FDA-approved algorithms for automated radiology screening. My research has been 
-              published in Nature Medicine, MICCAI, and IEEE Transactions on Medical Imaging.
+              Before joining Rush, I worked at Arcadia University, where I specialized in machine learning applied to hip 
+              and knee biomechanics. In particular, I developed predictive deep-learning models for key time series motion
+               analysis variables and designed an AI-based generative framework for producing synthetic motion analysis 
+               data.
             </p>
             
             <p>
-              I hold a Ph.D. in Biomedical Engineering from MIT and completed my postdoctoral fellowship at Johns 
-              Hopkins, where I pioneered novel approaches to multi-modal medical image fusion for cancer 
-              diagnosis.
+               I have a background in biomedical engineering and completed a dual Master’s Degree program in the same 
+               field between the University of Illinois Chicago and Politecnico di Milano.
             </p>
           </div>
         </div>
