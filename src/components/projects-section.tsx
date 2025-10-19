@@ -7,7 +7,7 @@ const ProjectsSection = () => {
   const projects = [
     {
       title: "Automated Report Generation from Lumbar Spine MRI",
-      description: "Deep learning framework for real-time brain tumor segmentation and classification in MRI scans with 97% accuracy.",
+      description: "Fine-tuned vision-language models for automated radiology report generation from MRI",
       technologies: ["PyTorch", "Vision-Language Model", "LoRA Fine-Tuning"],
       features: [ 
         "FDA breakthrough device designation",
@@ -18,7 +18,7 @@ const ProjectsSection = () => {
     },
     {
       title: "Autoencoder-Based Representation of Lumbar Disc Geometry",
-      description: "Computer vision model for rapid pneumonia diagnosis from chest CT scans with clinical validation.",
+      description: "Learning latent representations of lumbar disc geometry from MRI using a 3D autoencoder for interpretable disc modeling",
       technologies: ["PyTorch", "Autoencoder", "Segmentation", "DICOM"],
       features: [
         "94% sensitivity, 92% specificity",
@@ -29,7 +29,7 @@ const ProjectsSection = () => {
     },
     {
       title: "Deep Learning Prediction of Wear in Knee Implants",
-      description: "PET scan analysis platform using deep learning for early-stage Alzheimer's detection and progression modeling.",
+      description: "A Transformer-CNN model predicts polyethylene wear patterns in total knee replacements from time series kinematic and kinetic gait data",
       technologies: ["PyTorch", "Transformer", "CNN", "NumPy"],
       features: [
         "Predicts progression 3-5 years in advance",
@@ -47,7 +47,7 @@ const ProjectsSection = () => {
         <div className="text-center space-y-3">
           <h2 className="text-4xl font-bold text-foreground">Research Projects</h2>
           <p className="text-muted-foreground text-lg">
-            Developing AI solutions that translate cutting-edge research into clinical impact
+            Overview of selected research projects at the intersection of machine learning, medical imaging and biomechanics
           </p>
         </div>
         

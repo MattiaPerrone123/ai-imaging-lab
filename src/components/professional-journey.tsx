@@ -13,8 +13,8 @@ const ProfessionalJourney = () => {
       location: "Chicago, IL",
       description: "Developing deep learning models for medical imaging, clinical text and EHR tabular data",
       achievements: [
-        "Fine-tuned vision–language models for automated radiology report generation from MRI",
-        "Implemented segmentation and feature-extraction pipelines for spine MRI, CT, and PET data",
+        "Fine-tuned vision-language models for automated radiology report generation from MRI",
+        "Implemented segmentation and feature extraction pipelines for spine MRI, CT and PET data",
         "Published 2 first-author papers and presented 4 conference abstracts"
       ],
       icon: Building,
