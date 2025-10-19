@@ -12,13 +12,13 @@ const AboutSection = () => {
             <p>
               I'm a Research Scientist with 3+ years of experience in machine learning applied to the medical field. 
               At Rush University Medical Center, I focus on low back pain through complementary AI approaches involving 
-              vision–language models for MRI report generation, deep learning analysis of spine metabolism on PET-CT and 
+              vision-language models for MRI report generation, deep learning analysis of spine metabolism on PET-CT and 
               biopsychosocial modeling from tabular data.
             </p>
             
             <p>
               Before joining Rush, I worked at Arcadia University, where I specialized in machine learning applied to hip 
-              and knee biomechanics. I developed predictive deep-learning models for time series motion
+              and knee biomechanics. I developed predictive deep learning models for time series motion
                analysis variables and designed an AI-based generative framework for producing synthetic motion analysis 
                data.
             </p>

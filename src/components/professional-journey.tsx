@@ -11,11 +11,9 @@ const ProfessionalJourney = () => {
       title: "Research Scientist",
       organization: "Rush University Medical Center",
       location: "Chicago, IL",
-      description: "Leading interdisciplinary teams developing FDA-approved algorithms for automated radiology screening. Key achievements:",
+      description: "Developing deep learning models for medical images, clinical text and EHR tabular data",
       achievements: [
-        "Developed 3 FDA-approved AI algorithms for chest X-ray screening",
-        "Published 15+ papers in top-tier medical imaging journals",
-        "Led team of 12 researchers across multiple institutions"
+        "Published 2 first-author papers and presented 4 conference abstracts"
       ],
       icon: Building,
       color: "bg-primary",
@@ -28,12 +26,8 @@ const ProfessionalJourney = () => {
       title: "Research Assistant",
       organization: "Arcadia University",
       location: "Glenside, PA",
-      description: "Developed deep learning models for early disease detection in medical imaging. Key achievements:",
-      achievements: [
-        "Created novel architectures for multi-task learning in medical imaging",
-        "Achieved 95%+ accuracy in early lung cancer detection",
-        "Collaborated with 50+ hospitals worldwide for data collection"
-      ],
+      description: "Developed deep learning models for time series prediction and generation in biomechanics and motion analysis",
+      achievements: ["Published 4 papers (3 as first author) and presented 3 conference abstracts"],
       icon: Briefcase,
       color: "bg-primary",
       brandColor: "hsl(0, 60%, 40%)", // Arcadia maroon
@@ -45,12 +39,7 @@ const ProfessionalJourney = () => {
       title: "MS in Biomedical Engineering",
       organization: "University Of Illinois Chicago",
       location: "Chicago, IL",
-      description: "Pioneered novel approaches to multi-modal medical image fusion for cancer diagnosis. Key achievements:",
-      achievements: [
-        "Published in Nature Machine Intelligence on multi-modal fusion techniques",
-        "Presented at MICCAI 2020 - received best poster award",
-        "3 first-author publications in top-tier journals"
-      ],
+      description: "GPA: 4.0/4.0 - Best Double Degree Student Scholarship (UIC-PoliMi)",
       icon: GraduationCap,
       color: "bg-cyan-500",
       brandColor: "hsl(359, 66%, 52%)", // UIC red
@@ -62,7 +51,7 @@ const ProfessionalJourney = () => {
       title: "MS in Biomedical Engineering",
       organization: "Politecnico di Milano",
       location: "Milan, Italy",
-      description: "Thesis on advanced computer vision techniques for automated diagnosis systems",
+      description: "GPA: 110/110 cum laude - Thesis Abroad Scholarship",
       icon: GraduationCap,
       color: "bg-cyan-500",
       brandColor: "hsl(216, 68%, 29%)", // Polimi blue
@@ -74,7 +63,7 @@ const ProfessionalJourney = () => {
       title: "BS in Biomedical Engineering",
       organization: "Politecnico di Milano",
       location: "Milan, Italy",
-      description: "Pioneered AI-driven approaches to medical image analysis and interpretation",
+      description: "GPA: 110/110 cum laude - Best Freshmen Scholarship",
       icon: Award,
       color: "bg-cyan-500",
       brandColor: "hsl(216, 68%, 29%)", // Polimi blue
