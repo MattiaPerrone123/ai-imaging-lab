@@ -20,7 +20,7 @@ const ContactSection = () => {
               </CardTitle>
             </CardHeader>
             <CardContent>
-              <a href="mailto:your.email@example.com">
+              <a href="perronemattia98@gmail.com">
                 <Button className="w-full">
                   <Mail className="w-4 h-4 mr-2" />
                   perronemattia98@gmail.com
