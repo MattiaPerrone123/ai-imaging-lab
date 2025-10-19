@@ -11,8 +11,10 @@ const ProfessionalJourney = () => {
       title: "Research Scientist",
       organization: "Rush University Medical Center",
       location: "Chicago, IL",
-      description: "Developing deep learning models for medical images, clinical text and EHR tabular data",
+      description: "Developing deep learning models for medical imaging, clinical text and EHR tabular data",
       achievements: [
+        "Fine-tuned vision–language models for automated radiology report generation from MRI",
+        "Implemented segmentation and feature-extraction pipelines for spine MRI, CT, and PET data",
         "Published 2 first-author papers and presented 4 conference abstracts"
       ],
       icon: Building,
