@@ -108,7 +108,7 @@ const ProjectsSection = () => {
                 
                 <div className="flex gap-2 pt-4 flex-wrap">
                   {project.showOnlyAbstract ? (
-                    <Button size="sm" variant="outline" className="gap-2 text-sm px-4 h-9" asChild>
+                    <Button size="sm" variant="outline" className="gap-2 text-sm px-4 h-9 hover:bg-blue-100 hover:text-blue-600 transition-colors" asChild>
                       <a href={project.abstractUrl} target="_blank" rel="noopener noreferrer">
                         <GraduationCap className="w-4 h-4" />
                         Abstract
@@ -116,19 +116,19 @@ const ProjectsSection = () => {
                     </Button>
                   ) : (
                     <>
-                      <Button size="sm" variant="outline" className="gap-2 text-sm px-4 h-9" asChild>
+                      <Button size="sm" variant="outline" className="gap-2 text-sm px-4 h-9 hover:bg-blue-100 hover:text-blue-600 transition-colors" asChild>
                         <a href={project.paperUrl} target="_blank" rel="noopener noreferrer">
                           <FileText className="w-4 h-4" />
                           Paper
                         </a>
                       </Button>
-                      <Button size="sm" variant="outline" className="gap-2 text-sm px-4 h-9" asChild>
+                      <Button size="sm" variant="outline" className="gap-2 text-sm px-4 h-9 hover:bg-blue-100 hover:text-blue-600 transition-colors" asChild>
                         <a href={project.codeUrl} target="_blank" rel="noopener noreferrer">
                           <Github className="w-4 h-4" />
                           Code
                         </a>
                       </Button>
-                      <Button size="sm" variant="outline" className="gap-2 text-sm px-4 h-9" asChild>
+                      <Button size="sm" variant="outline" className="gap-2 text-sm px-4 h-9 hover:bg-blue-100 hover:text-blue-600 transition-colors" asChild>
                         <a href={project.abstractUrl} target="_blank" rel="noopener noreferrer">
                           <GraduationCap className="w-4 h-4" />
                           Abstract

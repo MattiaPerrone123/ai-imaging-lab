@@ -98,7 +98,7 @@ const PublicationsSection = () => {
                     
                     <div className="flex gap-3">
                       {pub.codeUrl && (
-                        <Button size="sm" variant="outline" className="gap-2" asChild>
+                        <Button size="sm" variant="outline" className="gap-2 hover:bg-blue-100 hover:text-blue-600 transition-colors" asChild>
                           <a href={pub.codeUrl} target="_blank" rel="noopener noreferrer">
                             <Github className="w-4 h-4" />
                             Code
@@ -106,7 +106,7 @@ const PublicationsSection = () => {
                         </Button>
                       )}
                       {pub.paperUrl && (
-                        <Button size="sm" variant="outline" className="gap-2" asChild>
+                        <Button size="sm" variant="outline" className="gap-2 hover:bg-blue-100 hover:text-blue-600 transition-colors" asChild>
                           <a href={pub.paperUrl} target="_blank" rel="noopener noreferrer">
                             <FileText className="w-4 h-4" />
                             Paper
