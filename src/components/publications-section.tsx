@@ -12,7 +12,7 @@ const PublicationsSection = () => {
       keywords: ["Convolutional neural networks", "Autoencoder", "Latent feature extraction", "MRI segmentation"],
       type: "Journal Article",
       citations: 127,
-      abstract: "We introduce a convolutional autoencoder framework that learns latent representations of lumbar disc geometry from segmented MRI for interpretable pathology prediction. Disc masks are generated with a Swin Transformer and analyzed via XGBoost on geometric and extracted features.",
+      abstract: "We introduce a convolutional autoencoder that learns latent representations of lumbar disc geometry from segmented MRI for interpretable pathology prediction. Disc masks are generated with a Swin Transformer and analyzed via XGBoost on geometric and extracted features",
       paperUrl: `${import.meta.env.BASE_URL}Autoencoder_paper.pdf`,
       codeUrl: "https://github.com/MattiaPerrone123/CNN-autoencoder-feature-extraction"
     },
@@ -24,7 +24,7 @@ const PublicationsSection = () => {
       keywords: ["Deep learning", "Transformers", "Total knee replacement", "Wear prediction", "Finite element analysis"],
       type: "Journal Article",
       citations: 203,
-      abstract: "This large-scale multi-center study demonstrates the potential of artificial intelligence in early Alzheimer's detection using PET scan analysis...",
+      abstract: "We present a hybrid transformer-CNN architecture to predict polyethylene wear patterns in total knee replacements from gait kinematic and kinetic data. The model learns temporal-spatial relationships between gait dynamics and contact mechanics, providing a faster alternative to finite element simulations",
       paperUrl: `${import.meta.env.BASE_URL}TKR_paper.pdf`,
       codeUrl: "https://github.com/MattiaPerrone123/Gait-to-Contact-G2C"
     },
@@ -36,7 +36,7 @@ const PublicationsSection = () => {
       keywords: ["Generative deep learning", "Variational autoencoder", "Motion analysis", "Musculoskeletal modeling"],
       type: "Journal Article",
       citations: 156,
-      abstract: "We propose a federated learning approach that enables collaborative AI model training while preserving patient privacy across multiple medical institutions...",
+      abstract: "This study introduces a generative deep learning framework based on a variational autoencoder to synthesize kinematic and kinetic motion analysis data. The model generates realistic biomechanical time series of hip and knee joint angles, moments and ground reaction forces, enabling effective data augmentation improving predictive accuracy in downstream models",
       paperUrl: `${import.meta.env.BASE_URL}Synthetic_paper.pdf`
     },
     {
@@ -47,7 +47,7 @@ const PublicationsSection = () => {
       keywords: ["Machine learning", "Hip joint moment", "Long short-term memory model", "Motion analysis"],
       type: "Journal Article",
       citations: 89,
-      abstract: "This work explores the application of convolutional neural networks for classifying various medical imaging modalities with high accuracy...",
+      abstract: "This work presents a long short-term memory model to predict sagittal plane hip joint moments from motion capture and force plate data. The model generalizes across healthy, pre-operative and post-operative cohorts, achieving strong agreement with inverse dynamics outputs and demonstrating the potential of deep learning for rapid musculoskeletal modeling",
       paperUrl: `${import.meta.env.BASE_URL}HJM_paper.pdf`,
       codeUrl: "https://github.com/MattiaPerrone123/Deep_Learning_For_HJM_Prediction"
     },
