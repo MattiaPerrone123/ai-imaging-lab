@@ -1,6 +1,6 @@
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { ExternalLink, Github, Calendar, GraduationCap } from "lucide-react";
+import { FileText, Github, Calendar, GraduationCap } from "lucide-react";
 
 const PublicationsSection = () => {
   const publications = [
@@ -85,7 +85,7 @@ const PublicationsSection = () => {
                         Code
                       </Button>
                       <Button size="sm" variant="outline" className="gap-2">
-                        <ExternalLink className="w-4 h-4" />
+                        <FileText className="w-4 h-4" />
                         Paper
                       </Button>
                     </div>
