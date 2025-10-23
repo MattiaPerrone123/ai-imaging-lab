@@ -44,7 +44,7 @@ const ProjectsSection = () => {
       ],
       paperUrl: `${import.meta.env.BASE_URL}TKR_paper.pdf`,
       codeUrl: "https://github.com/MattiaPerrone123/Gait-to-Contact-G2C",
-      abstractUrl: `${import.meta.env.BASE_URL}TKR_paper.pdf`,
+      abstractUrl: `${import.meta.env.BASE_URL}TKR_abstract.pdf`,
     }
   ];
 

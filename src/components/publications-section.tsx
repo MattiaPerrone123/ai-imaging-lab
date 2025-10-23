@@ -5,51 +5,51 @@ import { FileText, Github, Calendar, GraduationCap } from "lucide-react";
 const PublicationsSection = () => {
   const publications = [
     {
-      title: "Deep Learning Approaches for Automated Brain Tumor Segmentation in Multi-Modal MRI",
-      journal: "Nature Machine Intelligence",
-      year: "2024",
-      authors: "Chen, S., Rodriguez, M., Kim, J., et al.",
+      title: "A CNN Autoencoder for Learning Latent Disc Geometry from Segmented Lumbar Spine MRI",
+      journal: "Annals of Biomedical Engineering",
+      year: "2025",
+      authors: "Perrone M., Moore D., Ukeba D., Martin J.",
       keywords: ["Deep Learning", "Medical Imaging", "Brain Tumor", "MRI Segmentation"],
       type: "Journal Article",
       citations: 127,
       abstract: "We present a novel deep learning framework for automated brain tumor segmentation that achieves state-of-the-art performance across multiple MRI modalities...",
-      paperUrl: "#",
-      codeUrl: "#"
+      paperUrl: `${import.meta.env.BASE_URL}Autoencoder_paper.pdf`,
+      codeUrl: "https://github.com/MattiaPerrone123/CNN-autoencoder-feature-extraction"
     },
     {
-      title: "AI-Driven Early Detection of Alzheimer's Disease Using PET Imaging: A Multi-Center Study",
-      journal: "The Lancet Digital Health",
-      year: "2023",
-      authors: "Chen, S., Thompson, A., Lee, K., et al.",
+      title: "Gait-to-Contact (G2C): A Novel Deep Learning Framework to Predict Total Knee Replacement Wear from Gait Patterns",
+      journal: "Annals of Biomedical Engineering",
+      year: "2025",
+      authors: "Perrone M., Simmons S., Malloy P., Karas V., Yuh C., Martin J., Mell S.",
       keywords: ["Artificial Intelligence", "Alzheimer's Disease", "PET Imaging", "Early Detection"],
       type: "Journal Article",
       citations: 203,
       abstract: "This large-scale multi-center study demonstrates the potential of artificial intelligence in early Alzheimer's detection using PET scan analysis...",
-      paperUrl: "#",
-      codeUrl: "#"
+      paperUrl: `${import.meta.env.BASE_URL}TKR_paper.pdf`,
+      codeUrl: "https://github.com/MattiaPerrone123/Gait-to-Contact-G2C"
     },
     {
-      title: "Federated Learning for Medical Image Analysis: Privacy-Preserving AI in Healthcare",
-      journal: "IEEE Transactions on Medical Imaging",
-      year: "2023",
-      authors: "Wang, L., Chen, S., Patel, R., et al.",
+      title: "Synthetic data generation in motion analysis: A generative deep learning framework",
+      journal: "Journal of Engineering in Medicine",
+      year: "2025",
+      authors: "Perrone M., Mell S., Martin J., Nho S., Simmons S., Malloy P.",
       keywords: ["Federated Learning", "Privacy", "Medical AI", "Healthcare"],
       type: "Journal Article",
       citations: 156,
       abstract: "We propose a federated learning approach that enables collaborative AI model training while preserving patient privacy across multiple medical institutions...",
-      paperUrl: "#"
+      paperUrl: `${import.meta.env.BASE_URL}Synthetic_paper.pdf`
     },
     {
-      title: "Convolutional Neural Networks for Medical Image Classification",
-      journal: "Journal of Medical Systems",
-      year: "2022",
-      authors: "Chen, S., Kumar, V., Anderson, B., et al.",
+      title: "Machine learning-based prediction of hip joint moment in healthy subjects, patients and post-operative subjects",
+      journal: "Computer Methods in Biomechanics and Biomedical Engineering",
+      year: "2024",
+      authors: "Perrone M., Mell S., Martin J., Nho S., Malloy P.",
       keywords: ["CNN", "Image Classification", "Medical Imaging", "Deep Learning"],
       type: "Journal Article",
       citations: 89,
       abstract: "This work explores the application of convolutional neural networks for classifying various medical imaging modalities with high accuracy...",
-      paperUrl: "#",
-      codeUrl: "#"
+      paperUrl: `${import.meta.env.BASE_URL}HJM_paper.pdf`,
+      codeUrl: "https://github.com/MattiaPerrone123/Deep_Learning_For_HJM_Prediction"
     },
   ];
 
