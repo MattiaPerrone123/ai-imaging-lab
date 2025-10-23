@@ -1,7 +1,7 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { ExternalLink, Github, GraduationCap } from "lucide-react";
+import { FileText, Github, GraduationCap } from "lucide-react";
 
 const ProjectsSection = () => {
   const projects = [
@@ -66,7 +66,7 @@ const ProjectsSection = () => {
                 <div className="w-full h-full flex items-center justify-center text-muted-foreground transition-transform duration-500 ease-out group-hover:scale-110">
                   <div className="text-center">
                     <div className="w-20 h-20 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-3">
-                      <ExternalLink className="w-10 h-10 text-primary" />
+                      <FileText className="w-10 h-10 text-primary" />
                     </div>
                     <p className="text-sm font-medium">Project Visualization</p>
                   </div>
@@ -118,7 +118,7 @@ const ProjectsSection = () => {
                     <>
                       <Button size="sm" variant="outline" className="gap-2 text-sm px-4 h-9" asChild>
                         <a href={project.paperUrl} target="_blank" rel="noopener noreferrer">
-                          <ExternalLink className="w-4 h-4" />
+                          <FileText className="w-4 h-4" />
                           Paper
                         </a>
                       </Button>
@@ -130,7 +130,7 @@ const ProjectsSection = () => {
                       </Button>
                       <Button size="sm" variant="outline" className="gap-2 text-sm px-4 h-9" asChild>
                         <a href={project.abstractUrl} target="_blank" rel="noopener noreferrer">
-                          <ExternalLink className="w-4 h-4" />
+                          <GraduationCap className="w-4 h-4" />
                           Abstract
                         </a>
                       </Button>
