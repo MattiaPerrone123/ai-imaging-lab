@@ -7,18 +7,18 @@ const ProjectsSection = () => {
   const projects = [
     {
       title: "Automated Report Generation from Lumbar Spine MRI",
-      description: "Fine-tuned vision-language models for automated radiology report generation from MRI",
+      description: "Fine-tuning vision-language models for automated generation of structured radiology reports from lumbar spine MRI",
       technologies: ["PyTorch", "Vision-Language Model", "LoRA Fine-Tuning"],
       features: [ 
-        "FDA breakthrough device designation",
-        "Deployed in 12+ hospitals",
+        "Multiplanar analysis: sagittal and coronal T2-weighted MRI inputs",
+        "Multitask learning: classification head for joint prediction of level-specific findings and global impression",
         "Reduces radiologist reading time by 60%",
-        "Published in Nature Medicine"
+        "Poster presentation at ORS 2026"
       ],
     },
     {
       title: "Autoencoder-Based Representation of Lumbar Disc Geometry",
-      description: "Learning latent representations of lumbar disc geometry from MRI using a 3D autoencoder for interpretable disc modeling",
+      description: "Learning latent representations of lumbar disc geometry from MRI with a 3D autoencoder to enable interpretable modeling and improved pathology prediction",
       technologies: ["PyTorch", "Autoencoder", "Segmentation", "DICOM"],
       features: [
         "94% sensitivity, 92% specificity",
@@ -29,7 +29,7 @@ const ProjectsSection = () => {
     },
     {
       title: "Deep Learning Prediction of Wear in Knee Implants",
-      description: "A Transformer-CNN model predicts polyethylene wear patterns in total knee replacements from time series kinematic and kinetic gait data",
+      description: "Leveraging a Transformer-CNN model to predict polyethylene wear patterns in total knee replacements from time series kinematic and kinetic gait data",
       technologies: ["PyTorch", "Transformer", "CNN", "NumPy"],
       features: [
         "Predicts progression 3-5 years in advance",
