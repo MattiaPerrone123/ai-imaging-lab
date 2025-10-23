@@ -11,8 +11,8 @@ const ProjectsSection = () => {
       technologies: ["PyTorch", "Vision-Language Model", "LoRA Fine-Tuning"],
       features: [ 
         "Multiplanar analysis: sagittal and coronal T2-weighted MRI inputs",
-        "Multitask learning: classification head for joint prediction of level-specific findings and global impression",
-        "Reduces radiologist reading time by 60%",
+        "Multitask learning: classification head for level-wise and global predictions",
+        "Clinical-aware loss optimization to improve pathology prediction",
         "Poster presentation at ORS 2026"
       ],
     },
@@ -21,10 +21,10 @@ const ProjectsSection = () => {
       description: "Learning latent representations of lumbar disc geometry from MRI with a 3D autoencoder to enable interpretable modeling and improved pathology prediction",
       technologies: ["PyTorch", "Autoencoder", "Segmentation", "DICOM"],
       features: [
-        "94% sensitivity, 92% specificity",
-        "Processes scans in under 30 seconds",
-        "Integrated with 5 major hospital networks",
-        "CE Mark certified for European use"
+        "Swin Transformer for disc segmentation",
+        "Convolutional autoencoder for unsupervised feature extraction",
+        "XGBoost classifier for disc pathology prediction",
+        "Published in Annals of Biomedical Engineering"
       ],
     },
     {
@@ -32,10 +32,10 @@ const ProjectsSection = () => {
       description: "Leveraging a Transformer-CNN model to predict polyethylene wear patterns in total knee replacements from time series kinematic and kinetic gait data",
       technologies: ["PyTorch", "Transformer", "CNN", "NumPy"],
       features: [
-        "Predicts progression 3-5 years in advance",
-        "85% accuracy in early detection",
-        "Biomarker correlation with CSF analysis",
-        "Active in 3 clinical trials"
+        "Transformer encoder for temporal feature extraction from gait time series",
+        "CNN decoder for spatial reconstruction of polyethylene wear maps",
+        "Quantitative evaluation of spatial fidelity via SSIM and NMI metrics",
+        "Published in Annals of Biomedical Engineering"
       ],
     }
   ];
@@ -87,7 +87,7 @@ const ProjectsSection = () => {
                 </div>
                 
                 <div>
-                  <h4 className="font-semibold text-foreground mb-2 text-sm">Key Achievements</h4>
+                  <h4 className="font-semibold text-foreground mb-2 text-sm">Project Highlights</h4>
                   <ul className="space-y-1.5">
                     {project.features.map((feature, i) => (
                       <li key={i} className="flex items-start text-base text-muted-foreground">
