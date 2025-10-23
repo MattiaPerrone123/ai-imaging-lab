@@ -15,7 +15,7 @@ const ProjectsSection = () => {
         "Clinically-aware loss optimization to improve pathology prediction",
         "Poster presentation at ORS 2026"
       ],
-      abstractUrl: "#",
+      abstractUrl: `${import.meta.env.BASE_URL}MRI2Rep_abstract.pdf`,
       showOnlyAbstract: true,
     },
     {
@@ -28,9 +28,9 @@ const ProjectsSection = () => {
         "XGBoost classifier for disc pathology prediction",
         "Published in Annals of Biomedical Engineering"
       ],
-      paperUrl: "#",
-      codeUrl: "#",
-      abstractUrl: "#",
+      paperUrl: `${import.meta.env.BASE_URL}Autoencoder_paper.pdf`,
+      codeUrl: "https://github.com/MattiaPerrone123/CNN-autoencoder-feature-extraction",
+      abstractUrl: `${import.meta.env.BASE_URL}Autoencoder_abstract.pdf`,
     },
     {
       title: "Deep Learning Prediction of Wear in Knee Implants",
@@ -42,9 +42,9 @@ const ProjectsSection = () => {
         "Quantitative evaluation of spatial fidelity via SSIM and NMI metrics",
         "Published in Annals of Biomedical Engineering"
       ],
-      paperUrl: "#",
-      codeUrl: "#",
-      abstractUrl: "#",
+      paperUrl: `${import.meta.env.BASE_URL}TKR_paper.pdf`,
+      codeUrl: "https://github.com/MattiaPerrone123/Gait-to-Contact-G2C",
+      abstractUrl: `${import.meta.env.BASE_URL}TKR_paper.pdf`,
     }
   ];
 
