@@ -15,8 +15,8 @@ const HeroSection = () => {
               Research Scientist - Rush University Medical Center
             </h2>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              AI and computer vision for medical imaging and clinical text.
-              Prior experience applying deep learning to time-series in biomechanics.
+             AI for medical imaging and clinical text analysis. 
+             Prior experience applying deep learning to time series in biomechanics.
             </p>
           </div>
           
