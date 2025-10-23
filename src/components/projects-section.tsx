@@ -1,7 +1,7 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { ExternalLink, Github } from "lucide-react";
+import { ExternalLink, Github, GraduationCap } from "lucide-react";
 
 const ProjectsSection = () => {
   const projects = [
@@ -15,6 +15,8 @@ const ProjectsSection = () => {
         "Clinically-aware loss optimization to improve pathology prediction",
         "Poster presentation at ORS 2026"
       ],
+      abstractUrl: "#",
+      showOnlyAbstract: true,
     },
     {
       title: "Autoencoder-Based Representation of Lumbar Disc Geometry",
@@ -26,6 +28,9 @@ const ProjectsSection = () => {
         "XGBoost classifier for disc pathology prediction",
         "Published in Annals of Biomedical Engineering"
       ],
+      paperUrl: "#",
+      codeUrl: "#",
+      abstractUrl: "#",
     },
     {
       title: "Deep Learning Prediction of Wear in Knee Implants",
@@ -37,6 +42,9 @@ const ProjectsSection = () => {
         "Quantitative evaluation of spatial fidelity via SSIM and NMI metrics",
         "Published in Annals of Biomedical Engineering"
       ],
+      paperUrl: "#",
+      codeUrl: "#",
+      abstractUrl: "#",
     }
   ];
 
@@ -99,18 +107,35 @@ const ProjectsSection = () => {
                 </div>
                 
                 <div className="flex gap-2 pt-4 flex-wrap">
-                  <Button size="sm" variant="outline" className="gap-2 text-sm px-4 h-9">
-                    <ExternalLink className="w-4 h-4" />
-                    Paper
-                  </Button>
-                  <Button size="sm" variant="outline" className="gap-2 text-sm px-4 h-9">
-                    <Github className="w-4 h-4" />
-                    Code
-                  </Button>
-                  <Button size="sm" variant="outline" className="gap-2 text-sm px-4 h-9">
-                    <ExternalLink className="w-4 h-4" />
-                    Demo
-                  </Button>
+                  {project.showOnlyAbstract ? (
+                    <Button size="sm" variant="outline" className="gap-2 text-sm px-4 h-9" asChild>
+                      <a href={project.abstractUrl} target="_blank" rel="noopener noreferrer">
+                        <GraduationCap className="w-4 h-4" />
+                        Abstract
+                      </a>
+                    </Button>
+                  ) : (
+                    <>
+                      <Button size="sm" variant="outline" className="gap-2 text-sm px-4 h-9" asChild>
+                        <a href={project.paperUrl} target="_blank" rel="noopener noreferrer">
+                          <ExternalLink className="w-4 h-4" />
+                          Paper
+                        </a>
+                      </Button>
+                      <Button size="sm" variant="outline" className="gap-2 text-sm px-4 h-9" asChild>
+                        <a href={project.codeUrl} target="_blank" rel="noopener noreferrer">
+                          <Github className="w-4 h-4" />
+                          Code
+                        </a>
+                      </Button>
+                      <Button size="sm" variant="outline" className="gap-2 text-sm px-4 h-9" asChild>
+                        <a href={project.abstractUrl} target="_blank" rel="noopener noreferrer">
+                          <ExternalLink className="w-4 h-4" />
+                          Abstract
+                        </a>
+                      </Button>
+                    </>
+                  )}
                 </div>
               </div>
             </div>
