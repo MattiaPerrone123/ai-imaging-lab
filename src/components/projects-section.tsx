@@ -11,8 +11,8 @@ const ProjectsSection = () => {
       technologies: ["PyTorch", "Vision-Language Model", "LoRA Fine-Tuning"],
       features: [ 
         "Multiplanar analysis: sagittal and coronal T2-weighted MRI inputs",
-        "Multitask learning: classification head for level-wise and global predictions",
-        "Clinical-aware loss optimization to improve pathology prediction",
+        "Multitask learning: classification head to improve pathology detection",
+        "Clinically-aware loss optimization to improve pathology prediction",
         "Poster presentation at ORS 2026"
       ],
     },
@@ -32,7 +32,7 @@ const ProjectsSection = () => {
       description: "Leveraging a Transformer-CNN model to predict polyethylene wear patterns in total knee replacements from time series kinematic and kinetic gait data",
       technologies: ["PyTorch", "Transformer", "CNN", "NumPy"],
       features: [
-        "Transformer encoder for temporal feature extraction from gait time series",
+        "Transformer encoder for feature extraction from gait time series",
         "CNN decoder for spatial reconstruction of polyethylene wear maps",
         "Quantitative evaluation of spatial fidelity via SSIM and NMI metrics",
         "Published in Annals of Biomedical Engineering"
