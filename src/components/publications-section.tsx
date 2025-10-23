@@ -12,7 +12,7 @@ const PublicationsSection = () => {
       keywords: ["Convolutional neural networks", "Autoencoder", "Latent feature extraction", "MRI segmentation"],
       type: "Journal Article",
       citations: 127,
-      abstract: "We present a novel deep learning framework for automated brain tumor segmentation that achieves state-of-the-art performance across multiple MRI modalities...",
+      abstract: "We introduce a convolutional autoencoder framework that learns latent representations of lumbar disc geometry from segmented MRI for interpretable pathology prediction. Disc masks are generated with a Swin Transformer and analyzed via XGBoost on geometric and extracted features.",
       paperUrl: `${import.meta.env.BASE_URL}Autoencoder_paper.pdf`,
       codeUrl: "https://github.com/MattiaPerrone123/CNN-autoencoder-feature-extraction"
     },
@@ -29,7 +29,7 @@ const PublicationsSection = () => {
       codeUrl: "https://github.com/MattiaPerrone123/Gait-to-Contact-G2C"
     },
     {
-      title: "Synthetic data generation in motion analysis: A generative deep learning framework",
+      title: "Synthetic Data Generation in Motion Analysis: A Generative Deep Learning Framework",
       journal: "Journal of Engineering in Medicine",
       year: "2025",
       authors: "Perrone M., Mell S., Martin J., Nho S., Simmons S., Malloy P.",
@@ -40,7 +40,7 @@ const PublicationsSection = () => {
       paperUrl: `${import.meta.env.BASE_URL}Synthetic_paper.pdf`
     },
     {
-      title: "Machine learning-based prediction of hip joint moment in healthy subjects, patients and post-operative subjects",
+      title: "Machine Learning-Based Prediction of Hip Joint Moment in Healthy Subjects, Patients and Post-operative Subjects",
       journal: "Computer Methods in Biomechanics and Biomedical Engineering",
       year: "2024",
       authors: "Perrone M., Mell S., Martin J., Nho S., Malloy P.",
