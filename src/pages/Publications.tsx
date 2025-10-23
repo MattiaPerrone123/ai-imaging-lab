@@ -95,11 +95,11 @@ const Publications = () => {
                   </p>
                   
                   <div className="flex gap-2">
-                    <Button size="sm" variant="outline" className="hover:bg-blue-100 hover:text-blue-600 transition-colors">
+                    <Button size="sm" variant="outline">
                       <FileText className="w-4 h-4 mr-2" />
                       PDF
                     </Button>
-                    <Button size="sm" variant="outline" className="hover:bg-blue-100 hover:text-blue-600 transition-colors">
+                    <Button size="sm" variant="outline">
                       <ExternalLink className="w-4 h-4 mr-2" />
                       DOI: {pub.doi}
                     </Button>
@@ -110,7 +110,7 @@ const Publications = () => {
           </div>
           
           <div className="text-center pt-8">
-            <Button variant="outline" size="lg" className="hover:bg-blue-100 hover:text-blue-600 transition-colors">
+            <Button variant="outline" size="lg">
               <ExternalLink className="w-4 h-4 mr-2" />
               View Full Publication List on Google Scholar
             </Button>
