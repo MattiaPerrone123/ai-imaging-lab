@@ -12,7 +12,9 @@ const PublicationsSection = () => {
       keywords: ["Deep Learning", "Medical Imaging", "Brain Tumor", "MRI Segmentation"],
       type: "Journal Article",
       citations: 127,
-      abstract: "We present a novel deep learning framework for automated brain tumor segmentation that achieves state-of-the-art performance across multiple MRI modalities..."
+      abstract: "We present a novel deep learning framework for automated brain tumor segmentation that achieves state-of-the-art performance across multiple MRI modalities...",
+      paperUrl: "#",
+      codeUrl: "#"
     },
     {
       title: "AI-Driven Early Detection of Alzheimer's Disease Using PET Imaging: A Multi-Center Study",
@@ -22,7 +24,9 @@ const PublicationsSection = () => {
       keywords: ["Artificial Intelligence", "Alzheimer's Disease", "PET Imaging", "Early Detection"],
       type: "Journal Article",
       citations: 203,
-      abstract: "This large-scale multi-center study demonstrates the potential of artificial intelligence in early Alzheimer's detection using PET scan analysis..."
+      abstract: "This large-scale multi-center study demonstrates the potential of artificial intelligence in early Alzheimer's detection using PET scan analysis...",
+      paperUrl: "#",
+      codeUrl: "#"
     },
     {
       title: "Federated Learning for Medical Image Analysis: Privacy-Preserving AI in Healthcare",
@@ -32,7 +36,20 @@ const PublicationsSection = () => {
       keywords: ["Federated Learning", "Privacy", "Medical AI", "Healthcare"],
       type: "Journal Article",
       citations: 156,
-      abstract: "We propose a federated learning approach that enables collaborative AI model training while preserving patient privacy across multiple medical institutions..."
+      abstract: "We propose a federated learning approach that enables collaborative AI model training while preserving patient privacy across multiple medical institutions...",
+      paperUrl: "#"
+    },
+    {
+      title: "Convolutional Neural Networks for Medical Image Classification",
+      journal: "Journal of Medical Systems",
+      year: "2022",
+      authors: "Chen, S., Kumar, V., Anderson, B., et al.",
+      keywords: ["CNN", "Image Classification", "Medical Imaging", "Deep Learning"],
+      type: "Journal Article",
+      citations: 89,
+      abstract: "This work explores the application of convolutional neural networks for classifying various medical imaging modalities with high accuracy...",
+      paperUrl: "#",
+      codeUrl: "#"
     },
   ];
 
@@ -80,14 +97,22 @@ const PublicationsSection = () => {
                     </div>
                     
                     <div className="flex gap-3">
-                      <Button size="sm" variant="outline" className="gap-2">
-                        <Github className="w-4 h-4" />
-                        Code
-                      </Button>
-                      <Button size="sm" variant="outline" className="gap-2">
-                        <FileText className="w-4 h-4" />
-                        Paper
-                      </Button>
+                      {pub.codeUrl && (
+                        <Button size="sm" variant="outline" className="gap-2" asChild>
+                          <a href={pub.codeUrl} target="_blank" rel="noopener noreferrer">
+                            <Github className="w-4 h-4" />
+                            Code
+                          </a>
+                        </Button>
+                      )}
+                      {pub.paperUrl && (
+                        <Button size="sm" variant="outline" className="gap-2" asChild>
+                          <a href={pub.paperUrl} target="_blank" rel="noopener noreferrer">
+                            <FileText className="w-4 h-4" />
+                            Paper
+                          </a>
+                        </Button>
+                      )}
                     </div>
                   </div>
                 </div>
@@ -100,9 +125,12 @@ const PublicationsSection = () => {
           <Button 
             size="lg" 
             className="bg-blue-500 text-white hover:bg-blue-600 hover:scale-105 hover:shadow-[0_8px_20px_-4px_rgba(59,130,246,0.5)] transition-all duration-300 gap-2"
+            asChild
           >
-            <GraduationCap className="w-5 h-5" />
-            View all publications on Google Scholar
+            <a href="https://scholar.google.com/citations?user=kqPVfW8AAAAJ&hl=en&oi=ao" target="_blank" rel="noopener noreferrer">
+              <GraduationCap className="w-5 h-5" />
+              View all publications on Google Scholar
+            </a>
           </Button>
         </div>
       </div>
