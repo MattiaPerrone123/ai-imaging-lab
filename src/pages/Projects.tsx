@@ -9,7 +9,7 @@ const Projects = () => {
     {
       title: "AI-Powered MRI Tumor Detection - MRI2Rep",
       description: "Deep learning system for automated brain tumor detection and segmentation in MRI scans",
-      image: "/api/placeholder/400/250",
+      image: "/mri2rep.jpg",
       technologies: ["PyTorch", "U-Net", "DICOM", "Python"],
       features: [
         "99.2% accuracy in tumor detection",
@@ -23,7 +23,7 @@ const Projects = () => {
     {
       title: "CT Scan Pneumonia Classifier",
       description: "Computer vision model for rapid pneumonia diagnosis from chest CT scans",
-      image: "/api/placeholder/400/250",
+      image: "/autoencoder.jpeg",
       technologies: ["TensorFlow", "ResNet", "CUDA", "Docker"],
       features: [
         "94% sensitivity for pneumonia detection",
@@ -37,7 +37,7 @@ const Projects = () => {
     {
       title: "PET Scan Alzheimer's Predictor",
       description: "Early-stage Alzheimer's detection using PET scan analysis and machine learning",
-      image: "/api/placeholder/400/250",
+      image: "/tkr1.png",
       technologies: ["Scikit-learn", "OpenCV", "NumPy", "Flask"],
       features: [
         "85% accuracy in early detection",
