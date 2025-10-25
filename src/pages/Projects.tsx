@@ -66,10 +66,12 @@ const Projects = () => {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {projects.map((project, index) => (
               <Card key={index} className="overflow-hidden hover:shadow-lg transition-shadow">
-                <div className="aspect-video bg-muted relative">
-                  <div className="absolute inset-0 flex items-center justify-center text-muted-foreground">
-                    Project Image
-                  </div>
+                <div className="aspect-video bg-muted relative overflow-hidden">
+                  <img 
+                    src={project.image} 
+                    alt={project.title}
+                    className="w-full h-full object-cover"
+                  />
                 </div>
                 <CardHeader>
                   <CardTitle className="text-xl">{project.title}</CardTitle>
