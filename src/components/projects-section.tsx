@@ -68,7 +68,7 @@ const ProjectsSection = () => {
         <div className="space-y-20">
           {projects.map((project, index) => (
             <div key={index} className="grid md:grid-cols-2 gap-6 md:gap-12 items-start p-4 md:p-12 rounded-2xl border-2 border-border/50 transition-all duration-300 hover:shadow-lg hover:scale-[1.005] hover:border-border">
-              <div className="aspect-[4/3] rounded-xl md:rounded-2xl border border-border overflow-hidden group">
+              <div className="aspect-[4/3] rounded-xl md:rounded-2xl border border-border overflow-hidden group bg-blue-100">
                 <img
                   src={images[index]}
                   alt={`${project.title} visualization`}
