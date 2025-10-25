@@ -49,9 +49,9 @@ const ProjectsSection = () => {
   ];
 
   const images = [
-    "/mri2rep.jpg",
-    "/autoencoder.jpeg",
-    "/tkr1.png",
+    `${import.meta.env.BASE_URL}mri2rep.jpg`,
+    `${import.meta.env.BASE_URL}autoencoder.jpeg`,
+    `${import.meta.env.BASE_URL}tkr1.png`,
   ];
 
   return (
