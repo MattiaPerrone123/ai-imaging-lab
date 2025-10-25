@@ -48,6 +48,12 @@ const ProjectsSection = () => {
     }
   ];
 
+  const images = [
+    "/mri2rep.jpg",
+    "/autoencoder.jpeg",
+    "/tkr1.png",
+  ];
+
   return (
     <section id="projects" className="w-full bg-muted/20 py-20">
       <div className="max-w-7xl mx-auto px-8">
@@ -62,15 +68,13 @@ const ProjectsSection = () => {
         <div className="space-y-20">
           {projects.map((project, index) => (
             <div key={index} className="grid md:grid-cols-2 gap-6 md:gap-12 items-start p-4 md:p-12 rounded-2xl border-2 border-border/50 transition-all duration-300 hover:shadow-lg hover:scale-[1.005] hover:border-border">
-              <div className="aspect-[4/3] bg-gradient-to-br from-primary/5 to-primary/10 rounded-xl md:rounded-2xl border border-border overflow-hidden group cursor-pointer">
-                <div className="w-full h-full flex items-center justify-center text-muted-foreground transition-transform duration-500 ease-out group-hover:scale-110">
-                  <div className="text-center">
-                    <div className="w-20 h-20 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-3">
-                      <FileText className="w-10 h-10 text-primary" />
-                    </div>
-                    <p className="text-sm font-medium">Project Visualization</p>
-                  </div>
-                </div>
+              <div className="aspect-[4/3] rounded-xl md:rounded-2xl border border-border overflow-hidden group">
+                <img
+                  src={images[index]}
+                  alt={`${project.title} visualization`}
+                  loading="lazy"
+                  className="w-full h-full object-cover transition-transform duration-500 ease-out group-hover:scale-105"
+                />
               </div>
               
               <div className="space-y-6">
